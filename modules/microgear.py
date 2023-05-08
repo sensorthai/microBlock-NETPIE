@@ -1,5 +1,5 @@
 #   NETPIE Microgear Micropython
-#   Version: 1.0.0
+#   Version: 1.0.1
 #   Author: Chavee Issariyapat (i@chavee.com)
 #   MQTT client used in the library was slightly modified from umqtt.simple (https://github.com/micropython/micropython-lib/tree/master/micropython/umqtt.simple)
 
@@ -251,7 +251,6 @@ class MQTTClient:
 
 class Microgear:
     def mg_message_cb(self, topic, payload):
-        print(topic, payload)
         if topic.startswith('@msg/'):
             for tc in self.topic_callbacks:
                 if tc[0] == topic:
@@ -311,7 +310,10 @@ class Microgear:
             self.topic_callbacks.append([event, cb])
 
     def subscribe(self, topic):
-        self.mqttclient.subscribe(topic)
+        if topic not in self.topic_subscriptions:
+            self.topic_subscriptions.append(topic)
+        if self.mqttclient.mqtt_state == MQTT_STATE_CONNECTED:
+            self.mqttclient.subscribe(topic)
 
     def check_msg(self):
         if (self.mqttclient.mqtt_state) == MQTT_STATE_CONNECTED:
@@ -353,7 +355,6 @@ class Microgear:
             out = {}
             a = path.split('.')
             for i in range(len(a)-1, -1, -1) :
-                # print(i, a[i])
                 if value is None :
                     out[a[i]] = val
                 else:
@@ -364,5 +365,4 @@ class Microgear:
             return value;
 
         payload = ujson.dumps({'data': covertDotNotationToJSON(field, value)})
-        print(payload)
         self.mqttclient.publish('@shadow/data/update', payload)
