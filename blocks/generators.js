@@ -150,7 +150,7 @@ Blockly.Python['netpie_shadow_field'] = function(block) {
   let datatype = block.getFieldValue('datatype');
   let code;
 
-  let obj = 'shadow'+objectDotToBracket(field.replaceAll("'",""));
+  let obj = 'shadow'+objectDotToBracket(field.replace(/'/g,""));
   switch (datatype) {
     case 'string' :
             code = `str(${obj})`;

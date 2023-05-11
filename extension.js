@@ -3,7 +3,7 @@
     description: "Connect your device to NETPIE IoT platform",
     author: "Chavee Issariyapat",
     category: "Communication",
-    version: "1.0.2",
+    version: "1.0.3",
     icon: "/static/icon.png",
     color: "#4A7CCC",
     blocks: [

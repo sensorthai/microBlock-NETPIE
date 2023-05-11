@@ -258,16 +258,16 @@ Blockly.defineBlocksWithJsonArray(
         "name": "datatype",
         "options": [
           [
-            "string",
-            "string"
-          ],
-          [
             "int",
             "int"
           ],
           [
             "float",
             "float"
+          ],
+          [
+            "string",
+            "string"
           ],
           [
             "bool",
