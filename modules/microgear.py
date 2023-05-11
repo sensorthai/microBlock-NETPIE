@@ -1,5 +1,5 @@
 #   NETPIE Microgear Micropython
-#   Version: 1.0.2
+#   Version: 1.0.3
 #   Author: Chavee Issariyapat (i@chavee.com)
 #   MQTT client used in the library was slightly modified from umqtt.simple (https://github.com/micropython/micropython-lib/tree/master/micropython/umqtt.simple)
 
@@ -256,9 +256,12 @@ class Microgear:
                 if self.topicMatched(tc[0],topic):
                     tc[1](topic, payload)
         elif topic == '@shadow/data/updated':
-            sobj = ujson.loads(payload)
-            for sc in self.shadowupdated_callbacks:
-                sc(sobj)
+            try:
+                sobj = ujson.loads(payload)
+                for sc in self.shadowupdated_callbacks:
+                    sc(sobj['data'])
+            except KeyError as e:
+                    pass
         elif topic == '@private/shadow/data/get/response':
             sobj = ujson.loads(payload)
             for sgc in self.shadowget_callbacks:
