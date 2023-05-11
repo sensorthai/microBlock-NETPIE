@@ -108,6 +108,9 @@ Blockly.Python['netpie_msg_payload'] = function(block) {
     case 'float' :
             code = `float(payload)`;
             break;
+    case 'bool' :
+            code = `bool(payload)`;
+            break;
   }
   return [code, Blockly.Python.ORDER_NONE]; 
 };
