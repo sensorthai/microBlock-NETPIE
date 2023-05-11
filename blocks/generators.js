@@ -149,6 +149,7 @@ Blockly.Python['netpie_shadow_field'] = function(block) {
   let field = Blockly.Python.valueToCode(block, 'field', Blockly.Python.ORDER_ATOMIC) || '';
   let datatype = block.getFieldValue('datatype');
   let code;
+
   let obj = 'shadow'+objectDotToBracket(field.replaceAll("'",""));
   switch (datatype) {
     case 'string' :
@@ -182,6 +183,7 @@ Blockly.Python['netpie_on_reveived_private_msg'] = function(block) {
 
 Blockly.Python['netpie_private_msg_payload'] = function(block) {
   let datatype = block.getFieldValue('datatype');
+
   let code;
   switch (datatype) {
     case 'string' :

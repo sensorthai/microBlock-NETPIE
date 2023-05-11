@@ -85,7 +85,7 @@ Blockly.defineBlocksWithJsonArray(
       {
         "type": "field_input",
         "name": "topic",
-        "text": "switch"
+        "text": "home/switch"
       },
       {
         "type": "input_value",
@@ -113,7 +113,7 @@ Blockly.defineBlocksWithJsonArray(
       {
         "type": "field_input",
         "name": "topic",
-        "text": "switch"
+        "text": "home/switch"
       }
     ],
     "inputsInline": true,
@@ -133,7 +133,7 @@ Blockly.defineBlocksWithJsonArray(
       {
         "type": "field_input",
         "name": "topic",
-        "text": "switch"
+        "text": "home/#"
       },
       {
         "type": "input_dummy"
@@ -380,7 +380,7 @@ Blockly.defineBlocksWithJsonArray(
     "args0": [
       {
         "type": "field_dropdown",
-        "name": "datatype",
+        "name": "value",
         "options": [
           [
             "True",
