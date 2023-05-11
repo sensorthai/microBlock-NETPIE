@@ -1,5 +1,5 @@
 #   NETPIE Microgear Micropython
-#   Version: 1.0.1
+#   Version: 1.0.2
 #   Author: Chavee Issariyapat (i@chavee.com)
 #   MQTT client used in the library was slightly modified from umqtt.simple (https://github.com/micropython/micropython-lib/tree/master/micropython/umqtt.simple)
 
@@ -253,7 +253,7 @@ class Microgear:
     def mg_message_cb(self, topic, payload):
         if topic.startswith('@msg/'):
             for tc in self.topic_callbacks:
-                if tc[0] == topic:
+                if self.topicMatched(tc[0],topic):
                     tc[1](topic, payload)
         elif topic == '@shadow/data/updated':
             sobj = ujson.loads(payload)
@@ -366,3 +366,28 @@ class Microgear:
 
         payload = ujson.dumps({'data': covertDotNotationToJSON(field, value)})
         self.mqttclient.publish('@shadow/data/update', payload)
+
+    def topicMatched(self, sub, topic):
+        s = 0
+        t = 0
+        while s<len(sub):
+            if sub[s] == '#':
+                if s+1 == len(sub): return 1
+                else: return 0
+            elif sub[s] == '+':
+                if t == len(topic) or (s+1<len(sub) and sub[s+1]!='/'): return 0
+            else:
+                while s<len(sub) and sub[s]!='/' and t<len(topic) and topic[t]!='/':
+                    if sub[s]!=topic[t]: return 0
+                    s = s+1
+                    t = t+1
+                if (s<len(sub) and sub[s]!='/') or (t<len(topic) and topic[t]!='/'): return 0
+
+            while s<len(sub) and sub[s]!='/': s=s+1
+            while t<len(topic) and topic[t]!='/':t=t+1
+
+            if s<len(sub) and sub[s]=='/': s = s+1
+            if t<len(topic) and topic[t]=='/': t = t+1
+
+        if t == len(topic): return 1
+        else: return 0

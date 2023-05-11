@@ -128,7 +128,7 @@ Blockly.defineBlocksWithJsonArray(
 
   {
     "type": "netpie_on_reveived_msg",
-    "message0": "On Received message  of topic: @msg/%1 %2 do %3",
+    "message0": "On Received message matching topic: @msg/%1 %2 do %3",
     "args0": [
       {
         "type": "field_input",
@@ -334,6 +334,69 @@ Blockly.defineBlocksWithJsonArray(
     "inputsInline": true,
     "output": null,
     "colour": "#c76b99"
+  },
+
+
+  {
+    "type": "netpie_text",
+    "message0": "\"%1\"",
+    "args0": [
+      {
+        "type": "field_input",
+        "name": "value",
+        "text": "Hello",
+        "check": [
+          "String"
+        ]
+      }
+    ],
+    "inputsInline": true,
+    "output": null,
+    "colour": "#b3b3b3"
+  },
+
+  {
+    "type": "netpie_number",
+    "message0": "%1",
+    "args0": [
+      {
+        "type": "field_input",
+        "name": "value",
+        "text": "1",
+        "check": [
+          "Number",
+        ]
+      }
+    ],
+    "inputsInline": true,
+    "output": null,
+    "colour": "#b3b3b3"
+  },
+
+
+  {
+    "type": "netpie_boolean",
+    "message0": "%1",
+    "args0": [
+      {
+        "type": "field_dropdown",
+        "name": "datatype",
+        "options": [
+          [
+            "True",
+            "True"
+          ],
+          [
+            "False",
+            "False"
+          ]
+        ]
+      },
+
+    ],
+    "inputsInline": true,
+    "output": null,
+    "colour": "#b3b3b3"
   }
 
 ]);

@@ -149,11 +149,7 @@ Blockly.Python['netpie_shadow_field'] = function(block) {
   let field = Blockly.Python.valueToCode(block, 'field', Blockly.Python.ORDER_ATOMIC) || '';
   let datatype = block.getFieldValue('datatype');
   let code;
-
-console.log(field)
-
   let obj = 'shadow'+objectDotToBracket(field.replaceAll("'",""));
-console.log(obj)
   switch (datatype) {
     case 'string' :
             code = `str(${obj})`;
@@ -186,7 +182,6 @@ Blockly.Python['netpie_on_reveived_private_msg'] = function(block) {
 
 Blockly.Python['netpie_private_msg_payload'] = function(block) {
   let datatype = block.getFieldValue('datatype');
-
   let code;
   switch (datatype) {
     case 'string' :
@@ -199,5 +194,24 @@ Blockly.Python['netpie_private_msg_payload'] = function(block) {
             code = `float(payload)`;
             break;
   }
+  return [code, Blockly.Python.ORDER_NONE]; 
+};
+
+
+Blockly.Python['netpie_text'] = function(block) {
+  let value = block.getFieldValue('value');
+  let code = `"${String(value)}"`;
+  return [code, Blockly.Python.ORDER_NONE]; 
+};
+
+Blockly.Python['netpie_number'] = function(block) {
+  let value = block.getFieldValue('value');
+  let code = `${value}`;
+  return [code, Blockly.Python.ORDER_NONE]; 
+};
+
+Blockly.Python['netpie_boolean'] = function(block) {
+  let value = block.getFieldValue('value');
+  let code = `${value}`;
   return [code, Blockly.Python.ORDER_NONE]; 
 };
