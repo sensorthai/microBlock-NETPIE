@@ -1,9 +1,9 @@
 ({
     name: "NETPIE",
-    description: "Connect your device to NETPIE IoT platform",
+    description: "Connect your device to  IoT platform",
     author: "Chavee Issariyapat",
     category: "Communication",
-    version: "1.0.3",
+    version: "1.0.4",
     icon: "/static/icon.png",
     color: "#4A7CCC",
     blocks: [
