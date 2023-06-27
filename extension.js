@@ -1,7 +1,7 @@
 ({
-    name: "NETPIE",
-    description: "Connect your device to  IoT platform",
-    author: "Chavee Issariyapat",
+    name: "WARP",
+    description: "Connect your device to WARP IoT platform",
+    author: "TIN SHUNIJTANAKUN",
     category: "Communication",
     version: "1.0.4",
     icon: "/static/icon.png",
