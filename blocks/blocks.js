@@ -563,7 +563,7 @@ Blockly.defineBlocksWithJsonArray([
   
   },
   {
-    "type": "input_value",
+    "type": "field_number",
     "name": "read_num",
     "check": "Number"
   }
