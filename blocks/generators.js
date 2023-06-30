@@ -434,7 +434,7 @@
   
     
     var math_choice = block.getFieldValue('math');
-    var read_number = Blockly.Python.valueToCode(block, 'read_num', Blockly.Python.ORDER_ATOMIC);
+    var read_number = Blockly.Python.valueToCode(block, 'read_dis', Blockly.Python.ORDER_ATOMIC);
   
     code = `distance() ${math_choice} ${read_number}`;
     return [code, Blockly.Python.ORDER_NONE];
