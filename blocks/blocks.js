@@ -334,69 +334,8 @@ Blockly.defineBlocksWithJsonArray(
     "inputsInline": true,
     "output": null,
     "colour": "#c76b99"
-  },
-
-
-  {
-    "type": "netpie_text",
-    "message0": "\"%1\"",
-    "args0": [
-      {
-        "type": "field_input",
-        "name": "value",
-        "text": "Hello",
-        "check": [
-          "String"
-        ]
-      }
-    ],
-    "inputsInline": true,
-    "output": null,
-    "colour": "#b3b3b3"
-  },
-
-  {
-    "type": "netpie_number",
-    "message0": "%1",
-    "args0": [
-      {
-        "type": "field_input",
-        "name": "value",
-        "text": "1",
-        "check": [
-          "Number",
-        ]
-      }
-    ],
-    "inputsInline": true,
-    "output": null,
-    "colour": "#b3b3b3"
-  },
-
-
-  {
-    "type": "netpie_boolean",
-    "message0": "%1",
-    "args0": [
-      {
-        "type": "field_dropdown",
-        "name": "value",
-        "options": [
-          [
-            "True",
-            "True"
-          ],
-          [
-            "False",
-            "False"
-          ]
-        ]
-      },
-
-    ],
-    "inputsInline": true,
-    "output": null,
-    "colour": "#b3b3b3"
   }
+
+
 
 ]);
