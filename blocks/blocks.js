@@ -16,7 +16,7 @@ Blockly.defineBlocksWithJsonArray([
 {
  
 //Motor Start //////////////////////////////
-{
+
   "type": "stopMotor",
   "message0": "StopMotor",
   "inputsInline": true,
@@ -784,6 +784,4 @@ Blockly.defineBlocksWithJsonArray([
 "helpUrl": ""
 },
 // button_toggle end //////////////////////
-
-
 ]);
