@@ -2,7 +2,7 @@
     name: "Bettlecar",
     description: "",
     author: "UP-SKILL",
-    category: "Communication",
+    category: "",
     version: "1.0.4",
     icon: "/static/beetle_car.jpg",
     color: "#4A7CCC",
