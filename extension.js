@@ -4,7 +4,7 @@
     author: "UP-SKILL",
     category: "Communication",
     version: "1.0.4",
-    icon: "/static/icon.png",
+    icon: "/static/beetle_car.jpg",
     color: "#4A7CCC",
     blocks: [
        
