@@ -9,6 +9,12 @@ Blockly.Msg.OFF_Msg = "Off";
 Blockly.Msg.mt_sigh = ">=";
 Blockly.Msg.lt_sigh = "<=";
 Blockly.Msg.eq_sigh = "==";
+Blockly.Msg.happy = "Happy Birth Day";
+Blockly.Msg.darth_vader = "Darth Vader theme";
+Blockly.Msg.jingle_bell = "Jingle Bell";
+Blockly.Msg.mary_little_lamb = "Mary had a little lamb";
+Blockly.Msg.bitsy_spider  = "Bitsy Spider ";
+
 
 
 
