@@ -473,57 +473,55 @@ Blockly.defineBlocksWithJsonArray([
 
 //Buzzer Start ///////////////////////////////
 {
-  "type": "buzzer1",
-  "message0": "Buzzer Frequency %1 Beep %2 Second",
-  "args0": [
-    {
-      "type": "field_number",
-      "name": "freq",
-      "value": 0
-    },
-    {
-      "type": "field_number",
-      "name": "time",
-      "value": 0
-    }
-  ],
-  "previousStatement": null,
-  "nextStatement": null,
-  "colour": "#D35400",
-  "tooltip": "",
-  "helpUrl": ""
-},
-{
-  "type": "buzzer2",
-  "message0": "Buzzer Frequency %1 Beep",
-  "args0": [
-    {
-      "type": "field_number",
-      "name": "freq",
-      "value": 0
-    }
-  ],
-  "inputsInline": true,
-  "previousStatement": null,
-  "nextStatement": null,
-  "colour": "#D35400",
-  "tooltip": "",
-  "helpUrl": ""
-},
-
-{
-  "type": "buzzer3",
-  "message0": "Buzzer Stop Beep",
-  "args0": [
-    
-  ],
-  "inputsInline": true,
-  "previousStatement": null,
-  "nextStatement": null,
-  "colour": "#D35400",
-  "tooltip": "",
-  "helpUrl": ""
-},
+    "type": "buzzer1",
+    "message0": "Buzzer pin frequency %1 beep %2 seconds",
+    "args0": [
+      {
+        "type": "input_value",
+        "name": "freq",
+        "check": "Number"
+      },
+      {
+        "type": "input_value",
+        "name": "time",
+        "check": "Number"
+      }
+    ],
+    "inputsInline": true,
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": "#D35400",
+    "tooltip": "",
+    "helpUrl": ""
+  },
+  {
+    "type": "buzzer2",
+    "message0": "Buzzer pin %1 frequency beep",
+    "args0": [
+      {
+        "type": "input_value",
+        "name": "freq",
+        "check": "Number"
+      }
+    ],
+    "inputsInline": true,
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": "#D35400",
+    "tooltip": "",
+    "helpUrl": ""
+  },
+  
+  {
+    "type": "buzzer3",
+    "message0": "Buzzer pin stop beep",
+    "inputsInline": true,
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": "#D35400",
+    "tooltip": "",
+    "helpUrl": ""
+  },
     {
         "type": "buz_play_music",
             "message0": "Play Music🎵 : %1",
@@ -544,7 +542,7 @@ Blockly.defineBlocksWithJsonArray([
           "inputsInline": true,
           "previousStatement": null,
           "nextStatement": null,
-          "colour": "#27AE60",
+          "colour": "#D35400",
           "tooltip": "",
           "helpUrl": ""
 
@@ -579,33 +577,33 @@ Blockly.defineBlocksWithJsonArray([
 //LED End ////////////////////////////////////
 
 //Ultrasonic Start ///////////////////////////
- {  
-    "type": "ultra_read",
-    "message0": "Ultrasonic read  %1 %2 Centimeter",
-    "args0":[
-    {
-      "type": "field_dropdown",
-      "name": "math",
-      "options": [
-        [Blockly.Msg.mt_sigh , ">="],
-        [Blockly.Msg.lt_sigh , "<="],
-        [Blockly.Msg.eq_sigh , "=="]
-      ]
-    
-    },
-    {
-      "type": "input_value",
-      "name": "read_num",
-      "check": "Number"
-    }
-  ], 
-  "output": ["Number", "Boolean"],
-  "inputsInline": true,
-  "colour": "#27AE60",
-  "tooltip": "",
-  "helpUrl": ""
-  //-----------------------------------------^
+{  
+  "type": "ultra_read",
+  "message0": "Ultrasonic read  %1 %2 Centimeter",
+  "args0":[
+  {
+    "type": "field_dropdown",
+    "name": "math",
+    "options": [
+      [Blockly.Msg.mt_sigh , ">="],
+      [Blockly.Msg.lt_sigh , "<="],
+      [Blockly.Msg.eq_sigh , "=="]
+    ]
+  
   },
+  {
+    "type": "input_value",
+    "name": "read_num",
+    "check": "Number"
+  }
+], 
+"output": ["Number", "Boolean"],
+"inputsInline": true,
+"colour": "#27AE60",
+"tooltip": "",
+"helpUrl": ""
+//-----------------------------------------^
+},
 
 //Ultrasonic End /////////////////////////////
 
