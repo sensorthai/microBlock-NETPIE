@@ -196,6 +196,17 @@
                             `
                         },
                             "buzzer3",
+                    {
+                        xml: `
+                            <block type="buz_play_music">
+                                <value name="music">
+                                    <shadow type="math_number">
+                                        <field name="NUM">Happy Birth Day</field>
+                                    </shadow>
+                                </value>
+                            </block>
+                        `
+                    },
                         //Buzzer End /////////////////////////////////
 
                         {
