@@ -8,10 +8,10 @@
     color: "#4A7CCC",
     blocks: [
        
-                      {
+{
                             xml: '<label text="Motor beetle Car v1"></label>', 
                         },
-                         //Motor Strat ///////////////////////////////
+                        //Motor Strat ///////////////////////////////
 
                         "stopMotor",
                         {
@@ -320,6 +320,7 @@
                                     </value>
                                 </block>`
                         },
+                       
                         //Ultrasonic End ///////////////////////////////
 
                         {
@@ -332,7 +333,7 @@
                             "neopixel_off",
                             "neopixel_toggle",
                             "rainbow_neo",
-                            {
+                          /*  {
                                 xml: '<label text="Rainbow_Neopixel"></label>',
                             },
                             {
@@ -342,7 +343,7 @@
                                     </block>
                                     </statement>
                                     </block>`
-                               },
+                               },*/
 
                         //NeoPixel  End ////////////////////////////////
                         
@@ -384,5 +385,7 @@
                         },
                     "ir_get_sig",
                     
+                         
+
                             ]
                          });
