@@ -380,5 +380,14 @@
                             `
                         },
                         //Toggle_Button  Start ////////////////////////////////
+                        {
+                            xml: '<label text="Bluetooth_Conection"></label>',
+                        },
+                    "blue_con",
+                        {
+                            xml: '<label text="IR_Signal"></label>',
+                        },
+                    "ir_get_sig",
+                    
                             ]
                          });
