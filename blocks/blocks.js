@@ -579,96 +579,96 @@ Blockly.defineBlocksWithJsonArray([
 //LED End ////////////////////////////////////
 
 //Ultrasonic Start ///////////////////////////
-{  
-  "type": "ultra_read",
-  "message0": "Ultrasonic read  %1 %2 Centimeter.",
-  "args0":[
-  {
-    "type": "field_dropdown",
-    "name": "math",
-    "options": [
-      [Blockly.Msg.mt_sigh , ">="],
-      [Blockly.Msg.lt_sigh , "<="],
-      [Blockly.Msg.eq_sigh , "=="]
-    ]
-  
+ {  
+    "type": "ultra_read",
+    "message0": "Ultrasonic read  %1 %2 Centimeter",
+    "args0":[
+    {
+      "type": "field_dropdown",
+      "name": "math",
+      "options": [
+        [Blockly.Msg.mt_sigh , ">="],
+        [Blockly.Msg.lt_sigh , "<="],
+        [Blockly.Msg.eq_sigh , "=="]
+      ]
+    
+    },
+    {
+      "type": "input_value",
+      "name": "read_num",
+      "check": "Number"
+    }
+  ], 
+  "output": ["Number", "Boolean"],
+  "inputsInline": true,
+  "colour": "#27AE60",
+  "tooltip": "",
+  "helpUrl": ""
+  //-----------------------------------------^
   },
-  {
-    "type": "field_number",
-    "name": "read_dis",
-    "check": "Number"
-  }
-], 
-"output": ["Number", "Boolean"],
-"inputsInline": true,
-"colour": "#27AE60",
-"tooltip": "",
-"helpUrl": ""
-
-},
 
 //Ultrasonic End /////////////////////////////
 
 //neopixel Start /////////////////////////////
 {
-  "type": "neopixel_fill_color1",
-  "message0": "NeoPixel fill color %1",
-  "args0": [
-    {
-      "type": "field_colour",
-      "name": "color",
-      "colour": "#00FF00"
-    }
-  ],
-  "inputsInline": true,
-  "previousStatement": null,
-  "nextStatement": null,
-  "colour": "#17A589",
-  "tooltip": "",
-  "helpUrl": ""
-},
-{
-  "type": "neopixel_off",
-  "message0": "NeoPixel Off",
-  "inputsInline": true,
-  "previousStatement": null,
-  "nextStatement": null,
-  "colour": "#17A589",
-  "tooltip": "",
-  "helpUrl": ""
-},
-{
-  "type": "neopixel_toggle",
-  "message0": "NeoPixel toggle color %1 : %2",
-  "args0": [
-    {
-      "type": "field_colour",
-      "name": "tog_color1",
-      "colour": "#FF0000"
-    },
-    {
-      "type": "field_colour",
-      "name": "tog_color2",
-      "colour": "#0000ff"
-    }
-  ],
-  "inputsInline": true,
-  "previousStatement": null,
-  "nextStatement": null,
-  "colour": "#17A589",
-  "tooltip": "",
-  "helpUrl": ""
-},
-{
-  "type": "rainbow_neo",
-  "message0": "NeoPixel rainbow",
-  "inputsInline": true,
-  "previousStatement": null,
-  "nextStatement": null,
-  "colour": "#17A589",
-  "tooltip": "",
-  "helpUrl": ""
-},
+        "type": "neopixel_fill_color1",
+        "message0": "NeoPixel on color %1",
+        "args0": [
+          {
+            "type": "field_colour",
+            "name": "color",
+            "colour": "#ff0000"
+          }
+        ],
+        "inputsInline": true,
+        "previousStatement": null,
+        "nextStatement": null,
+        "colour": "#27AE60",
+        "tooltip": "",
+        "helpUrl": ""
+      },/////////////////////////////////////
+      {
+        "type": "neopixel_toggle",
+        "message0": "NeoPixel toggle color %1 : %2",
+        "args0": [
+          {
+            "type": "field_colour",
+            "name": "tog_color1",
+            "colour": "#ff0000"
+          },
+          {
+            "type": "field_colour",
+            "name": "tog_color2",
+            "colour": "0000ff"
+          }
+        ],
+        "inputsInline": true,
+        "previousStatement": null,
+        "nextStatement": null,
+        "colour": "#27AE60",
+        "tooltip": "",
+        "helpUrl": ""
+      },
+      {
+        "type": "rainbow_neo",
+        "message0": "NeoPixel rainbow",
+        "inputsInline": true,
+        "previousStatement": null,
+        "nextStatement": null,
+        "colour": "#27AE60",
+        "tooltip": "",
+        "helpUrl": ""
+      },
+      {
+        "type": "neopixel_off",
+        "message0": "NeoPixel Off",
+        "inputsInline": true,
+        "previousStatement": null,
+        "nextStatement": null,
+        "colour": "#27AE60",
+        "tooltip": "",
+        "helpUrl": ""
+      },
 //neopixel End ///////////////////////////////
 
 //button Start ///////////////////////////////
@@ -676,7 +676,7 @@ Blockly.defineBlocksWithJsonArray([
   {
     
     "type":"switch",
-        "message0": "Switch: %1 is put",
+        "message0": "Button: %1 is put",
         "args0":[
           {
             "type" : "field_dropdown",
@@ -724,7 +724,9 @@ Blockly.defineBlocksWithJsonArray([
       "colour": "#27AE60",
       "tooltip": "",
       "helpUrl": ""
-  },
+      },
+      
+ 
 
 //button End /////////////////////////////////
 
@@ -815,4 +817,28 @@ Blockly.defineBlocksWithJsonArray([
 "helpUrl": ""
 },
 // button_toggle end //////////////////////
+ //BLUE_START
+ { 
+    "type": "blue_con",
+    "message0": "Bluetooth ON",
+    "inputsInline": true,
+    //"previousStatement": null,
+    "nextStatement": null,
+    "colour": "	#4682b4",
+    "tooltip": "",
+    "helpUrl": ""
+  },
+  //BLUE_END
+//IR_START
+{ 
+    "type": "ir_get_sig",
+    "message0": "IR signal",
+    "inputsInline": true,
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": " #FE0000",
+    "tooltip": "",
+    "helpUrl": ""
+  },
+  //IR_END
 ]);
