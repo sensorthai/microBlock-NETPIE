@@ -316,7 +316,7 @@ Blockly.defineBlocksWithJsonArray([
 "inputsInline": true,
 "previousStatement": null,
 "nextStatement": null,
-"colour": "#229954",
+"colour": "#1d5722",
 "tooltip": "",
 "helpUrl": ""
 },
@@ -569,7 +569,7 @@ Blockly.defineBlocksWithJsonArray([
           "inputsInline": true,
           "previousStatement": null,
           "nextStatement": null,
-          "colour": "#27AE60",
+          "colour": "#236429",
           "tooltip": "",
           "helpUrl": ""
           
@@ -592,7 +592,7 @@ Blockly.defineBlocksWithJsonArray([
   
   },
   {
-    "type": "input_value",
+    "type": "field_number",
     "name": "read_num",
     "check": "Number"
   }
@@ -621,7 +621,7 @@ Blockly.defineBlocksWithJsonArray([
         "inputsInline": true,
         "previousStatement": null,
         "nextStatement": null,
-        "colour": "#27AE60",
+        "colour": "#4B0082",
         "tooltip": "",
         "helpUrl": ""
       },/////////////////////////////////////
@@ -643,7 +643,7 @@ Blockly.defineBlocksWithJsonArray([
         "inputsInline": true,
         "previousStatement": null,
         "nextStatement": null,
-        "colour": "#27AE60",
+        "colour": "#4B0082",
         "tooltip": "",
         "helpUrl": ""
       },
@@ -653,7 +653,7 @@ Blockly.defineBlocksWithJsonArray([
         "inputsInline": true,
         "previousStatement": null,
         "nextStatement": null,
-        "colour": "#27AE60",
+        "colour": "#4B0082",
         "tooltip": "",
         "helpUrl": ""
       },
@@ -663,7 +663,7 @@ Blockly.defineBlocksWithJsonArray([
         "inputsInline": true,
         "previousStatement": null,
         "nextStatement": null,
-        "colour": "#27AE60",
+        "colour": "#4B0082",
         "tooltip": "",
         "helpUrl": ""
       },
@@ -693,7 +693,7 @@ Blockly.defineBlocksWithJsonArray([
       "inputsInline": true,
       //"peviousStatement": null,
       //"nextStatement": null,
-      "colour": "#27AE60",
+      "colour": "#9400d3",
       "tooltip": "",
       "helpUrl": ""
       
@@ -719,7 +719,7 @@ Blockly.defineBlocksWithJsonArray([
       "inputsInline": true,
       //"peviousStatement": null,
       //"nextStatement": null,
-      "colour": "#27AE60",
+      "colour": "#9400d3",
       "tooltip": "",
       "helpUrl": ""
       },
@@ -728,93 +728,7 @@ Blockly.defineBlocksWithJsonArray([
 
 //button End /////////////////////////////////
 
-//button_toggle Start ////////////////////////
-{
-  "type":"buttonA_toggle",
-  "message0": "Switch: %1 is on ",
-  "args0":[
-    {
-      "type" : "field_dropdown",
-      "name" : "pin",
-      "options" : [
-        [
-          Blockly.Msg.buttonA_Msg , "18"
-        ]
-      ]
-    }
-  ],
-"output": ["Number", "Boolean"],
-"inputsInline": true,
-"colour": "#27AE60",
-"tooltip": "",
-"helpUrl": ""
-},
-{
-  "type":"buttonB_toggle",
-  "message0": "Switch: %1 is on ",
-  "args0":[
-    {
-      "type" : "field_dropdown",
-      "name" : "pin",
-      "options" : [
-        [
-          Blockly.Msg.buttonB_Msg , "5"
-        ]
-      ]
-    }
-  ],
-"output": ["Number", "Boolean"],
-"inputsInline": true,
-"colour": "#1F618D",
-"tooltip": "",
-"helpUrl": ""
-},
-
-{
-  "type":"buttonA_toggle",
-  "message0": "Switch: %1 is on ",
-  "args0":[
-    {
-      "type" : "field_dropdown",
-      "name" : "pin",
-      "options" : [
-        [
-          Blockly.Msg.buttonA_Msg , "18"
-        ]
-      ]
-    }
-  ],
-"output": ["Number", "Boolean"],
-"inputsInline": true,
-//"peviousStatement": null,
-//"nextStatement": null,
-"colour": "#1F618D",
-"tooltip": "",
-"helpUrl": ""
-},
-{
-  "type":"buttonB_toggle",
-  "message0": "Switch: %1 is on ",
-  "args0":[
-    {
-      "type" : "field_dropdown",
-      "name" : "pin",
-      "options" : [
-        [
-          Blockly.Msg.buttonB_Msg , "5"
-        ]
-      ]
-    }
-  ],
-"output": ["Number", "Boolean"],
-"inputsInline": true,
-//"peviousStatement": null,
-//"nextStatement": null,
-"colour": "#1F618D",
-"tooltip": "",
-"helpUrl": ""
-},
-// button_toggle end //////////////////////
+//
  //BLUE_START
  { 
     "type": "blue_con",
