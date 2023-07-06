@@ -376,3 +376,4 @@ def read_ircode(ird):
     return command
 
 command = read_ircode(ird)
+
