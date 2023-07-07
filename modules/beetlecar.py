@@ -326,7 +326,7 @@ twinkle_twinkle = [0, 0, 6, 6, 9, 9, 6, 13, 5, 5, 4, 4, 2, 2, 0, 13, 6, 6, 5, 5,
 
 bitsy_spider = [9, 0, 0, 2, 4, 4, 13, 4, 2, 0, 2, 4, 2, 13, 4, 4, 5, 7, 13, 7, 5, 4, 5, 7, 4, 0, 0, 2, 4, 13, 4, 2, 0, 2, 4, 0, 13, 7, 7, 0, 0, 0, 2, 4, 4, 13, 4, 2, 0, 2, 4, 0]
 
-#IR STATE
+'''#IR STATE
 
 ird = Pin(19,Pin.IN)
 
@@ -375,5 +375,5 @@ def read_ircode(ird):
         command = code
     return command
 
-command = read_ircode(ird)
+command = read_ircode(ird)'''
 
