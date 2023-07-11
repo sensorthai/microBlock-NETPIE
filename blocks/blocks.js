@@ -297,11 +297,11 @@ Blockly.defineBlocksWithJsonArray([
       "name": "pin",
       "options": [
         [
-          "Up & Down",
+          "Up",
           "17"
         ],
         [
-          "hold",
+          "Hold",
           "16"
         ]
       ]
