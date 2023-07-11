@@ -51,7 +51,7 @@ def read_ircode(ird):
 command = read_ircode(ird)
 
 def command_reader():
-       return command = read_ircode(ird)
+       return read_ircode(ird)
               
        
        
