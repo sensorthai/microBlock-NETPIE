@@ -50,5 +50,8 @@ def read_ircode(ird):
 
 command = read_ircode(ird)
 while True:
-      command = read_ircode(ird)
+       command = read_ircode(ird)
+       print(command)
+       time.sleep(1)
+       
        
