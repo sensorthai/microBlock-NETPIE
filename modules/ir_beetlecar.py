@@ -53,6 +53,6 @@ command = read_ircode(ird)
 def command_reader():
        while True:
               command = read_ircode(ird)
-              print("command")
+              print(command)
        
        
