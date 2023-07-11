@@ -49,9 +49,11 @@ def read_ircode(ird):
     return command
 
 command = read_ircode(ird)
-while True:
-       command = read_ircode(ird)
-       print(command)
-       time.sleep(1)
+
+def command_reader():
+       while True:
+              command = read_ircode(ird)
+              print(command)
+              time.sleep(1)
        
        
