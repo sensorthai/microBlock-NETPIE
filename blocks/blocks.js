@@ -674,7 +674,7 @@ Blockly.defineBlocksWithJsonArray([
   {
     
     "type":"switch",
-        "message0": "Button: %1 is put",
+        "message0": "Switch: %1 is put",
         "args0":[
           {
             "type" : "field_dropdown",
