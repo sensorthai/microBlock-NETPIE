@@ -1,6 +1,6 @@
 from machine import Pin
 import utime
-
+import time
 ird = Pin(19,Pin.IN)
 
 act = {"1": "LLLLLLLLHHHHHHHHLHHLHLLLHLLHLHHH","2": "LLLLLLLLHHHHHHHHHLLHHLLLLHHLLHHH","3": "LLLLLLLLHHHHHHHHHLHHLLLLLHLLHHHH",
@@ -48,4 +48,8 @@ def read_ircode(ird):
         command = code
     return command
 
-command = read_ircode(ird)
+#command = read_ircode(ird)
+while True:
+       command = read_ircode(ird)
+       print(comman)
+       time.sleep(1)
