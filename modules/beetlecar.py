@@ -309,8 +309,8 @@ class BeetleCarMotor:
         self.set_speed(self.pwm4, 0)
 
 # ตัวอย่างการใช้งาน
-beetlecar = BeetleCarMotor()
-beetlecar.stop()
+beetlecarmotor = BeetleCarMotor()
+beetlecarmotor.stop()
 
 scale5 = [523 , 554 , 587 ,622 , 659 , 698 ,739 , 783 , 830 , 880 , 932 , 987 , 1046 , 0]
 
