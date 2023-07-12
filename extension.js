@@ -237,7 +237,7 @@
                             <block type="led_onoff">
                                 <value name="pin_trig">
                                     <shadow type="math_number">
-                                        <field name="NUM">Left_ON</field>
+                                        <field name="NUM">Left ON</field>
                                     </shadow>
                                 </value>
                             </block>
@@ -355,7 +355,7 @@
                                 <block type = "switch">
                                     <value name = "pin">
                                         <shadow type = "math_number">
-                                            <field name = "NUM">SW_A</field>
+                                            <field name = "NUM">SW A</field>
                                         </shadow>
                                     </value>
                                 </block>
@@ -369,7 +369,7 @@
                                 <block type = "switch_toggle">
                                     <value name = "pin">
                                         <shadow type = "math_number">
-                                            <field name = "NUM">SW_A</field>
+                                            <field name = "NUM">SW A</field>
                                         </shadow>
                                     </value>
                                 </block>
