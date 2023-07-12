@@ -381,6 +381,29 @@
                         },
                     "blue_con",
                         {
+                            xml:`
+                                <block type = "blue_command">
+                                    <value name = "text">
+                                        <shadow type = "text">
+                                            <field name = "text">Hello world</field>
+                                        </shadow>
+                                    </value>
+                                </block>
+                            `
+                        },
+                        {
+                            xml:`
+                                <block type = "blue_msg">
+                                    <value name = "text_blue">
+                                        <shadow type = "text">
+                                            <field name = "text">Hello world</field>
+                                        </shadow>
+                                    </value>
+                                </block>
+                            `
+                        },
+                        
+                        {
                             xml: '<label text="IR_Signal"></label>',
                         },
                     "ir_get_sig",
