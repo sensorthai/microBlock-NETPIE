@@ -786,7 +786,7 @@ Blockly.defineBlocksWithJsonArray([
   },
   {
     "type": "blue_msg",
-    "message0": "Bluetoth massage : %1",
+    "message0": "Bluetooth massage : %1",
     "args0": [
       {
         "type": "input_value",
