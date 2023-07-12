@@ -1,5 +1,5 @@
-Blockly.Msg.buttonA_Msg = "SW A";
-Blockly.Msg.buttonB_Msg = "SW B";
+Blockly.Msg.buttonA_Msg = "SW_A";
+Blockly.Msg.buttonB_Msg = "SW_B";
 Blockly.Msg.LED_LIFT_Msg = "Left ON";
 Blockly.Msg.LED_RIGHT_Msg = "Right ON";
 Blockly.Msg.LEFT_OFF = "Left OFF";
