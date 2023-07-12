@@ -761,7 +761,7 @@ Blockly.defineBlocksWithJsonArray([
 //IR_START
 { 
     "type": "ir_get_sig",
-    "message0": "IR signal",
+    "message0": "Read IR signal",
     "inputsInline": true,
     "previousStatement": null,
     "nextStatement": null,
@@ -771,7 +771,7 @@ Blockly.defineBlocksWithJsonArray([
   },
  {
   "type":"ir_com",
-  "message0": "Put Button %1",
+  "message0": "IR Signal = %1",
   "args0":[
     {
       "type" : "field_dropdown",
