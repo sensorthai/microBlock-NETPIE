@@ -1,9 +1,9 @@
-Blockly.Msg.buttonA_Msg = "SW_A";
-Blockly.Msg.buttonB_Msg = "SW_B";
-Blockly.Msg.LED_LIFT_Msg = "Left_ON";
-Blockly.Msg.LED_RIGHT_Msg = "Right_ON";
-Blockly.Msg.LEFT_OFF = "Left_OFF";
-Blockly.Msg.RIGHT_OFF = "Right_OFF";
+Blockly.Msg.buttonA_Msg = "SW A";
+Blockly.Msg.buttonB_Msg = "SW B";
+Blockly.Msg.LED_LIFT_Msg = "Left ON";
+Blockly.Msg.LED_RIGHT_Msg = "Right ON";
+Blockly.Msg.LEFT_OFF = "Left OFF";
+Blockly.Msg.RIGHT_OFF = "Right OFF";
 Blockly.Msg.On_Msg = "ON";
 Blockly.Msg.OFF_Msg = "Off";
 Blockly.Msg.mt_sigh = ">=";
