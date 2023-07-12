@@ -9,7 +9,7 @@
     blocks: [
        
 {
-                            xml: '<label text="Motor beetle Car v1"></label>', 
+                            xml: '<label text="Motor Beetle Car v1"></label>', 
                         },
                         //Motor Strat ///////////////////////////////
 
@@ -205,7 +205,7 @@
                         //Buzzer End /////////////////////////////////
 
                         {
-                            xml: '<label text="servo"></label>', 
+                            xml: '<label text="Servo"></label>', 
                         },
 
                         //servo Start////////////////////////////////
@@ -348,7 +348,7 @@
                         //NeoPixel  End ////////////////////////////////
                         
                         {
-                            xml: '<label text="switch"></label>',
+                            xml: '<label text="Switch"></label>',
                         },
                         {
                             xml:`
@@ -362,7 +362,7 @@
                             `
                         },
                         {
-                            xml: '<label text="Toggle_Switch"></label>',
+                            xml: '<label text="Toggle Switch"></label>',
                         },
                         {
                             xml:`
@@ -404,7 +404,7 @@
                         },
                         
                         {
-                            xml: '<label text="IR_Signal"></label>',
+                            xml: '<label text="IR Signal"></label>',
                         },
                     "ir_get_sig",
                         {
