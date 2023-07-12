@@ -377,7 +377,7 @@
                         },
                         //Toggle_Button  Start ////////////////////////////////
                         {
-                            xml: '<label text="Bluetooth_Conection"></label>',
+                            xml: '<label text="Bluetooth"></label>',
                         },
                     "blue_con",
                         {
