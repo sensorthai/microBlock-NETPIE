@@ -384,7 +384,7 @@
                             xml: '<label text="IR_Signal"></label>',
                         },
                     "ir_get_sig",
-                    {
+                        {
                             xml:`
                                 <block type = "ir_com">
                                     <value name = "ir_but">
