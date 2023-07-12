@@ -379,7 +379,7 @@
                         {
                             xml: '<label text="Bluetooth"></label>',
                         },
-                    "blue_con",
+            
                         {
                             xml:`
                                 <block type = "blue_command">
