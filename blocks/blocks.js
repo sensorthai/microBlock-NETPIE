@@ -15,6 +15,23 @@ Blockly.Msg.jingle_bell = "Jingle Bell";
 Blockly.Msg.mary_little_lamb = "Mary had a little lamb";
 Blockly.Msg.bitsy_spider  = "Bitsy Spider ";
 
+Blockly.Msg.but1 = "1";
+Blockly.Msg.but2 = "2";
+Blockly.Msg.but3 = "3";
+Blockly.Msg.but4 = "4";
+Blockly.Msg.but5 = "5";
+Blockly.Msg.but6 = "6";
+Blockly.Msg.but7 = "7";
+Blockly.Msg.but8 = "8";
+Blockly.Msg.but9 = "9";
+Blockly.Msg.but0 = "0";
+Blockly.Msg.buttag = "#";
+Blockly.Msg.butstar = "*";
+Blockly.Msg.butup = "Up";
+Blockly.Msg.butdown = "Down";
+Blockly.Msg.butleft = "Left";
+Blockly.Msg.butright = "Right";
+Blockly.Msg.butokay = "Ok";
 
 
 
