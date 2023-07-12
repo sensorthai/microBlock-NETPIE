@@ -495,8 +495,7 @@
             var blue_text_print = Blockly.Python.valueToCode(block, 'text_blue', Blockly.Python.ORDER_ATOMIC);
             
             
-            var code = `blue_con.ble_msg = ""\n
-                        blue_con.ble.send(${blue_text_print})\n`;
+            var code = `blue_con.ble_msg = ""\nblue_con.ble.send(${blue_text_print})\n`;
             return code;
             };
       //BLUE_END
