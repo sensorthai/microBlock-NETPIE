@@ -384,7 +384,17 @@
                             xml: '<label text="IR_Signal"></label>',
                         },
                     "ir_get_sig",
-                    
+                    {
+                            xml:`
+                                <block type = "ir_com">
+                                    <value name = "ir_but">
+                                        <shadow type = "math_number">
+                                            <field name = "NUM">1</field>
+                                        </shadow>
+                                    </value>
+                                </block>
+                            `
+                        },
                          
 
                             ]
