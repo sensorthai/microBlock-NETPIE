@@ -176,9 +176,4 @@ def blue_connect():
         ble.send('LED is OFF.')
     sleep_ms(100)'''
 
-while True:
-    blue_connect()
-    '''neorainbow()
-    comman_blu'''
-    
 
