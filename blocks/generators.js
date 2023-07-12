@@ -478,6 +478,27 @@
         var code = '\n'
         return code;
       };
+      Blockly.Python['blue_command'] = function(block) {
+        Blockly.Python.definitions_['import_blue_con'] = 'import blue_con';
+    
+        
+        var blue_text = Blockly.Python.valueToCode(block, 'text', Blockly.Python.ORDER_ATOMIC);
+        
+        
+        var code = `blue_con.ble_msg == ${blue_text}`;
+        return [code, Blockly.Python.ORDER_NONE];
+        };
+        Blockly.Python['blue_msg'] = function(block) {
+            Blockly.Python.definitions_['import_blue_con'] = 'import blue_con';
+        
+            
+            var blue_text_print = Blockly.Python.valueToCode(block, 'text_blue', Blockly.Python.ORDER_ATOMIC);
+            
+            
+            var code = `blue_con.ble_msg = ""\n
+                        blue_con.ble.send(${blue_text_print})\n`;
+            return code;
+            };
       //BLUE_END
     //IR_START
     Blockly.Python['ir_get_sig'] = function(block) {
