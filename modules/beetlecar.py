@@ -251,7 +251,7 @@ pwm2 = machine.PWM(RMotor)
 pwm3 = machine.PWM(LMotor2)
 pwm4 = machine.PWM(RMotor2)
 
-def moveAward(duration, speed):
+def forward_forsec(duration, speed):
   LMotor.on()
   pwm1.duty(speed)
   RMotor.on()
@@ -270,7 +270,7 @@ def moveAward(duration, speed):
   RMotor2.off()
   pwm4.duty(0)
 
-def moveBack(duration, speed):
+def backward_forsec(duration, speed):
   LMotor.off()
   pwm1.duty(0)
   RMotor.off()
@@ -289,7 +289,7 @@ def moveBack(duration, speed):
   RMotor2.off()
   pwm4.duty(0)
 
-def moveRight(duration, speed):
+def right_forsec(duration, speed):
   LMotor.on()
   pwm1.duty(speed)
   RMotor.off()
@@ -308,7 +308,7 @@ def moveRight(duration, speed):
   RMotor2.off()
   pwm4.duty(0)
 
-def moveLeft(duration, speed):
+def left_forsec(duration, speed):
   LMotor.off()
   pwm1.duty(0)
   RMotor.on()
@@ -327,6 +327,46 @@ def moveLeft(duration, speed):
   RMotor2.off()
   pwm4.duty(0)
 
+
+def forward(speed):
+  LMotor.on()
+  pwm1.duty(speed)
+  RMotor.on()
+  pwm2.duty(speed)
+  LMotor2.off()
+  pwm3.duty(0)
+  RMotor2.off()
+  pwm4.duty(0)
+
+def backward(speed):
+  LMotor.off()
+  pwm1.duty(0)
+  RMotor.off()
+  pwm2.duty(0)
+  LMotor2.on()
+  pwm3.duty(speed)
+  RMotor2.on()
+  pwm4.duty(speed)
+
+def left(speed):
+  LMotor.off()
+  pwm1.duty(0)
+  RMotor.on()
+  pwm2.duty(speed)
+  LMotor2.off()
+  pwm3.duty(0)
+  RMotor2.off()
+  pwm4.duty(0)
+
+def right(speed):
+  LMotor.on()
+  pwm1.duty(speed)
+  RMotor.off()
+  pwm2.duty(0)
+  LMotor2.off()
+  pwm3.duty(0)
+  RMotor2.off()
+  pwm4.duty(0)
 # ตัวอย่างการใช้งาน
 #beetlecarmotor = BeetleCarMotor()
 #beetlecarmotor.stop()
