@@ -45,7 +45,7 @@
                         {
                             xml: `
                                 <block type="moveAward">
-                                    <field name="moveAward">0</field>
+                                    <field name="move_sec">0</field>
                                     <field name="speed">0</field>
                                 </block>
                             `
@@ -53,7 +53,7 @@
                         {
                             xml: `
                                 <block type="moveBack">
-                                    <field name="moveBack">0</field>
+                                    <field name="move_sec">0</field>
                                     <field name="speed">0</field>
                                 </block>
                             `
@@ -61,7 +61,7 @@
                         {
                             xml: `
                                 <block type="moveRight">
-                                    <field name="moveRight">0</field>
+                                    <field name="move_sec">0</field>
                                     <field name="speed">0</field>
                                 </block>
                             `
@@ -69,7 +69,7 @@
                         {
                             xml: `
                                 <block type="moveLeft">
-                                    <field name="moveLeft">0</field>
+                                    <field name="move_sec">0</field>
                                     <field name="speed">0</field>
                                 </block>
                             `
