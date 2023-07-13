@@ -886,4 +886,161 @@ Blockly.defineBlocksWithJsonArray([
 
 },
   //IR_END
+ //Line tracking STATE
+  {
+    "type": "linetracking_pin",
+    "message0": "line tracking sensor read pin1:  %1 pin2: %2 pin3: %3",
+    "args0": [
+      {
+        "type": "field_dropdown",
+        "name": "sensor1",
+        "options": [
+          [
+            "SS1",
+            "36"
+          ],
+          [
+            "SS2",
+            "39"
+          ],
+          [
+            "SS3",
+            "34"
+          ],
+          [
+            "SS4",
+            "35"
+          ],
+          [
+            "SS5",
+            "13"
+          ],
+          [
+            "None",
+            "None"
+          ]
+        ]
+      },
+      {
+        "type": "field_dropdown",
+        "name": "sensor2",
+        "options": [
+          [
+            "SS1",
+            "36"
+          ],
+          [
+            "SS2",
+            "39"
+          ],
+          [
+            "SS3",
+            "34"
+          ],
+          [
+            "SS4",
+            "35"
+          ],
+          [
+            "SS5",
+            "13"
+          ],
+          [
+            "None",
+            "None"
+          ]
+        ]
+      },
+      {
+        "type": "field_dropdown",
+        "name": "sensor3",
+        "options": [
+          [
+            "SS1",
+            "36"
+          ],
+          [
+            "SS2",
+            "39"
+          ],
+          [
+            "SS3",
+            "34"
+          ],
+          [
+            "SS4",
+            "35"
+          ],
+          [
+            "SS5",
+            "13"
+          ],
+          [
+            "None",
+            "None"
+          ]
+        ]
+      }
+    ],
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": 15,
+    "tooltip": "",
+    "helpUrl": ""
+  },
+  {
+    "type": "linetracking_sensor",
+    "message0": "read %1 %2 threshold",
+    "args0": [
+      {
+        "type": "field_dropdown",
+        "name": "sensor",
+        "options": [
+          [
+            "sensor1",
+            "sensor1_value"
+          ],
+          [
+            "sensor2",
+            "sensor2_value"
+          ],
+          [
+            "sensor3",
+            "sensor3_value"
+          ]
+        ]
+      },
+      {
+        "type": "field_dropdown",
+        "name": "operator",
+        "options": [
+          [
+            "=",
+            "=="
+          ],
+          [
+            ">",
+            ">"
+          ],
+          [
+            "<",
+            "<"
+          ],
+          [
+            ">=",
+            ">="
+          ],
+          [
+            "<=",
+            "<="
+          ]
+        ]
+      }
+    ],
+    "output": null,
+    "colour": 15,
+    "tooltip": "",
+    "helpUrl": ""
+  }
+         //END line tracking state
 ]);
