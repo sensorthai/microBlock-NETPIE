@@ -328,8 +328,8 @@ def moveLeft(duration, speed):
   pwm4.duty(0)
 
 # ตัวอย่างการใช้งาน
-beetlecarmotor = BeetleCarMotor()
-beetlecarmotor.stop()
+#beetlecarmotor = BeetleCarMotor()
+#beetlecarmotor.stop()
 
 #END STATE MOTOR
 scale5 = [523 , 554 , 587 ,622 , 659 , 698 ,739 , 783 , 830 , 880 , 932 , 987 , 1046 , 0]
