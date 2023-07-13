@@ -75,7 +75,25 @@
                             `
                         },
                         //Motor End /////////////////////////////////
-
+                        //Line tracking start
+                                     {
+                            xml: `
+                                <block type="linetracking_pin">
+                                    <field name="pin1">39</field>
+                                    <field name="pin2">34</field>
+                                    <field name="pin3">35</field>
+                                </block>
+                            `
+                        },
+                        {
+                            xml: `
+                                <block type="linetracking_sensor">
+                                    <field name="sensor">0</field>
+                                    <field name="operator">0</field>
+                                </block>
+                            `
+                        },
+                        //Line tracking END
                         {
                             xml: '<label text="OLED"></label>', 
                         },
