@@ -1,7 +1,6 @@
 
     //Motor Strat //////////////////////////
-
-  Blockly.Python['stopMotor'] = function(block) {
+Blockly.Python['stopMotor'] = function(block) {
     Blockly.Python.definitions_['import_beetlecar'] = 'import beetlecar';
   
     var code = 'beetlecar.stop()\n';
@@ -50,8 +49,10 @@ Blockly.Python['moveRight'] = function(block) {
   
   return code;
 };
+
 Blockly.Python['Forward'] = function(block) {
   Blockly.Python.definitions_['import_beetlecar'] = 'import beetlecar';
+
 
 var speed = block.getFieldValue('speed');
 var code = `beetlecar.forward(${speed})\n`;
