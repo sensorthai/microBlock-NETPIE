@@ -889,7 +889,7 @@ Blockly.defineBlocksWithJsonArray([
  //Line tracking STATE
   {
     "type": "linetracking_pin",
-    "message0": "line tracking sensor read pin1:  %1 pin2: %2 pin3: %3",
+    "message0": "Line Tracking sensor read pin1:  %1 pin2: %2 pin3: %3",
     "args0": [
       {
         "type": "field_dropdown",
