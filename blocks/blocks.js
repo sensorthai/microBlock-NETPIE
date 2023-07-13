@@ -55,7 +55,7 @@ Blockly.defineBlocksWithJsonArray([
   "args0": [
     {
       "type": "field_number",
-      "name": "moveAward",
+      "name": "move_sec",
       "value": 0
     },
     {
@@ -90,7 +90,7 @@ Blockly.defineBlocksWithJsonArray([
   "args0": [
     {
       "type": "field_number",
-      "name": "moveBack",
+      "name": "move_sec",
       "value": 0
     },
     {
@@ -124,7 +124,7 @@ Blockly.defineBlocksWithJsonArray([
   "args0": [
     {
       "type": "field_number",
-      "name": "moveLeft",
+      "name": "move_sec",
       "value": 0
     },
     {
@@ -158,7 +158,7 @@ Blockly.defineBlocksWithJsonArray([
   "args0": [
     {
       "type": "field_number",
-      "name": "moveRight",
+      "name": "move_sec",
       "value": 0
     },
     {
