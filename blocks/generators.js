@@ -101,16 +101,16 @@ return code;
       
       //OLED Start //////////////////////////////////
       Blockly.Python['oled_init'] = function(block) {
-        Blockly.Python.definitions_['import_oled'] = 'import OLED';
+        Blockly.Python.definitions_['import_beetle_oled'] = 'import beetlecar_OLED';
       
         var dropdown_size = block.getFieldValue('size');
       
-        var code = `oled = OLED.SSD1306_I2C(128, ${+dropdown_size == 0 ? 64 : 32})\n`;
+        var code = `oled = beetlecar_OLED.SSD1306_I2C(128, ${+dropdown_size == 0 ? 64 : 32})\n`;
         return code;
       };
       
       Blockly.Python['oled_draw_text'] = function(block) {
-        Blockly.Python.definitions_['import_oled'] = 'import OLED';
+         Blockly.Python.definitions_['import_beetle_oled'] = 'import beetlecar_OLED';
         
         var value_text = Blockly.Python.valueToCode(block, 'text', Blockly.Python.ORDER_ATOMIC);
         var value_x = Blockly.Python.valueToCode(block, 'x', Blockly.Python.ORDER_ATOMIC);
@@ -121,7 +121,7 @@ return code;
       };
       
       Blockly.Python['oled_draw_line'] = function(block) {
-        Blockly.Python.definitions_['import_oled'] = 'import OLED';
+         Blockly.Python.definitions_['import_beetle_oled'] = 'import beetlecar_OLED';
       
         var value_x1 = Blockly.Python.valueToCode(block, 'x1', Blockly.Python.ORDER_ATOMIC);
         var value_y1 = Blockly.Python.valueToCode(block, 'y1', Blockly.Python.ORDER_ATOMIC);
@@ -133,7 +133,7 @@ return code;
       };
       
       Blockly.Python['oled_draw_rect'] = function(block) {
-        Blockly.Python.definitions_['import_oled'] = 'import OLED';
+         Blockly.Python.definitions_['import_beetle_oled'] = 'import beetlecar_OLED';
       
         var value_x = Blockly.Python.valueToCode(block, 'x', Blockly.Python.ORDER_ATOMIC);
         var value_y = Blockly.Python.valueToCode(block, 'y', Blockly.Python.ORDER_ATOMIC);
