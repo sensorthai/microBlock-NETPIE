@@ -240,8 +240,92 @@ class SSD1306_I2C(SSD1306):
     def write_data(self, buf):
         self.write_list[1] = buf
         self.i2c.writevto(self.addr, self.write_list)
+#MOTOR STATE
+LMotor = machine.Pin(27, machine.Pin.OUT)
+LMotor2 = machine.Pin(14, machine.Pin.OUT)
+RMotor = machine.Pin(25, machine.Pin.OUT)
+RMotor2 = machine.Pin(26, machine.Pin.OUT)
 
+pwm1 = machine.PWM(LMotor)
+pwm2 = machine.PWM(RMotor)
+pwm3 = machine.PWM(LMotor2)
+pwm4 = machine.PWM(RMotor2)
 
+def moveAward(duration, speed):
+  LMotor.on()
+  pwm1.duty(speed)
+  RMotor.on()
+  pwm2.duty(speed)
+  LMotor2.off()
+  pwm3.duty(0)
+  RMotor2.off()
+  pwm4.duty(0)
+  time.sleep(duration)
+  LMotor.off()
+  pwm1.duty(0)
+  RMotor.off()
+  pwm2.duty(0)
+  LMotor2.off()
+  pwm3.duty(0)
+  RMotor2.off()
+  pwm4.duty(0)
+
+def moveBack(duration, speed):
+  LMotor.off()
+  pwm1.duty(0)
+  RMotor.off()
+  pwm2.duty(0)
+  LMotor2.on()
+  pwm3.duty(speed)
+  RMotor2.on()
+  pwm4.duty(speed)
+  time.sleep(duration)
+  LMotor.off()
+  pwm1.duty(0)
+  RMotor.off()
+  pwm2.duty(0)
+  LMotor2.off()
+  pwm3.duty(0)
+  RMotor2.off()
+  pwm4.duty(0)
+
+def moveRight(duration, speed):
+  LMotor.on()
+  pwm1.duty(speed)
+  RMotor.off()
+  pwm2.duty(0)
+  LMotor2.off()
+  pwm3.duty(0)
+  RMotor2.off()
+  pwm4.duty(0)
+  time.sleep(duration)
+  LMotor.off()
+  pwm1.duty(0)
+  RMotor.off()
+  pwm2.duty(0)
+  LMotor2.off()
+  pwm3.duty(0)
+  RMotor2.off()
+  pwm4.duty(0)
+
+def moveLeft(duration, speed):
+  LMotor.off()
+  pwm1.duty(0)
+  RMotor.on()
+  pwm2.duty(speed)
+  LMotor2.off()
+  pwm3.duty(0)
+  RMotor2.off()
+  pwm4.duty(0)
+  time.sleep(duration)
+  LMotor.off()
+  pwm1.duty(0)
+  RMotor.off()
+  pwm2.duty(0)
+  LMotor2.off()
+  pwm3.duty(0)
+  RMotor2.off()
+  pwm4.duty(0)
 class BeetleCarMotor:
     def __init__(self):
         self.LMotor = machine.Pin(27, machine.Pin.OUT)
@@ -312,6 +396,7 @@ class BeetleCarMotor:
 beetlecarmotor = BeetleCarMotor()
 beetlecarmotor.stop()
 
+#END STATE MOTOR
 scale5 = [523 , 554 , 587 ,622 , 659 , 698 ,739 , 783 , 830 , 880 , 932 , 987 , 1046 , 0]
 
 happy_birthday = [0 , 0 , 2 , 0 ,5 ,4 ,13, 0 ,0 , 2 ,0 ,7 ,5 ,13, 0 ,12 ,0 ,0 ,9 , 5 , 4 ,2, 13 , 9 , 9 , 9, 5 , 7 ,5]
