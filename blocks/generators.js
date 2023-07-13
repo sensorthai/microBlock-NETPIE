@@ -465,5 +465,59 @@
       return [code, Blockly.Python.ORDER_NONE];
     };
       //IR_END
-      
+      //LINE TRACKING STATE
+Blockly.Python['linetracking_pin'] = function(block) {
+  Blockly.Python.definitions_['import_machine'] = 'import machine';
+  Blockly.Python.definitions_['import_time'] = 'import time';
+  
+  var dropdown_pin1 = block.getFieldValue('sensor1');
+  var dropdown_pin2 = block.getFieldValue('sensor2');
+  var dropdown_pin3 = block.getFieldValue('sensor3');
+  
+  Blockly.Python.definitions_['linetracking'] =
+  'sensor1_pin = ' + dropdown_pin1 + '\n' +
+  'sensor2_pin = ' + dropdown_pin2 + '\n' +
+  'sensor3_pin = ' + dropdown_pin3 + '\n' +
+  'black = 220\n' +
+  'white = 3920\n' +
+  'threshold = (black + white) / 2\n';
+
+  Blockly.Python.definitions_['function_adcRead'] =
+    'def ' + Blockly.Python.variableDB_.getName('adcRead', Blockly.Python.NAME_TYPE) + '(analog_pin):\n' +
+    '    adc = machine.ADC(machine.Pin(analog_pin))\n' +
+    '    adc.atten(machine.ADC.ATTN_11DB)\n' +
+    '    adc.width(machine.ADC.WIDTH_12BIT)\n' +
+    '    return adc.read()\n';
+  
+    Blockly.Python.definitions_['line_tracking_variables'] =
+    'def ' + Blockly.Python.variableDB_.getName('lineTracking', Blockly.Python.NAME_TYPE) + '():\n' +
+    '    global sensor1_pin, sensor2_pin, sensor3_pin, black, white, threshold\n' +
+    '    sensor1_pin = ' + dropdown_pin1 + '\n' +
+    '    sensor2_pin = ' + dropdown_pin2 + '\n' +
+    '    sensor3_pin = ' + dropdown_pin3 + '\n' +
+    '    black = 220\n' +
+    '    white = 3920\n' +
+    '    threshold = (black + white) / 2\n'
+
+  var code = 'lineTracking()\n'
+  if (dropdown_pin1 !== 'None') {
+    code += 'sensor1_value = adcRead(sensor1_pin);\n';
+  }
+  if (dropdown_pin2 !== 'None') {
+    code += 'sensor2_value = adcRead(sensor2_pin);\n';
+  }
+  if (dropdown_pin3 !== 'None') {
+    code += 'sensor3_value = adcRead(sensor3_pin);\n';
+  }
+  return code;
+}
+
+Blockly.Python['linetracking_sensor'] = function(block) {
+  var dropdown_sensor = block.getFieldValue('sensor');
+  var dropdown_operator = block.getFieldValue('operator');
+  var code = `${dropdown_sensor} ${dropdown_operator} threshold`;
+
+  return [code, Blockly.Python.ORDER_NONE];
+};
+//END LINE TRACKING STATE
   
