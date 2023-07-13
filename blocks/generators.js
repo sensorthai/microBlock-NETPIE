@@ -11,17 +11,19 @@
 
 Blockly.Python['moveAward'] = function(block) {
   Blockly.Python.definitions_['import_beetlecar'] = 'import beetlecar';
-  
+  var second_move = block.getFieldValue1('move_sec');
   var speed = block.getFieldValue('speed');
-  var code = `beetlecar.forward_forsec(${speed})\n`;
+  var code = `beetlecar.forward_forsec(${second_move},${speed})\n`;
   
   return code;
 };
 
 Blockly.Python['moveBack'] = function(block) {
   Blockly.Python.definitions_['import_beetlecar'] = 'import beetlecar';
+  var second_move = block.getFieldValue1('move_sec');
+
   var speed = block.getFieldValue('speed');
-  var code = `beetlecar.backward_forsec(${speed})\n`;
+  var code = `beetlecar.backward_forsec(${second_move},${speed})\n`;
 
   
   return code;
@@ -29,8 +31,10 @@ Blockly.Python['moveBack'] = function(block) {
 
 Blockly.Python['moveLeft'] = function(block) {
   Blockly.Python.definitions_['import_beetlecar'] = 'import beetlecar';
+  var second_move = block.getFieldValue1('move_sec');
+
   var speed = block.getFieldValue('speed');
-  var code = `beetlecar.left_forsec(${speed})\n`;
+  var code = `beetlecar.left_forsec(${second_move},${speed})\n`;
 
   
   return code;
@@ -38,13 +42,14 @@ Blockly.Python['moveLeft'] = function(block) {
 
 Blockly.Python['moveRight'] = function(block) {
   Blockly.Python.definitions_['import_beetlecar'] = 'import beetlecar';
+  var second_move = block.getFieldValue1('move_sec');
+
   var speed = block.getFieldValue('speed');
-  var code = `beetlecar.right_forsec(${speed})\n`;
+  var code = `beetlecar.right_forsec(${second_move},${speed})\n`;
 
   
   return code;
 };
-
 Blockly.Python['Forward'] = function(block) {
   Blockly.Python.definitions_['import_beetlecar'] = 'import beetlecar';
 
