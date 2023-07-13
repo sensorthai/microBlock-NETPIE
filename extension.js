@@ -76,6 +76,9 @@
                         },
                         //Motor End /////////////////////////////////
                         //Line tracking start
+                       {
+                            xml: '<label text="Line Tracking"></label>'
+                        },
                                      {
                             xml: `
                                 <block type="linetracking_pin">
