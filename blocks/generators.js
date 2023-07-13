@@ -385,13 +385,13 @@ return code;
       //BLUE_START
     Blockly.Python['blue_con'] = function(block) {
         
-        Blockly.Python.definitions_['import_blue_con'] = 'import blue_con';
+        Blockly.Python.definitions_['import_beetlecar_ble'] = 'import beetlecar_BLE';
         
         var code = '\n'
         return code;
       };
       Blockly.Python['blue_command'] = function(block) {
-        Blockly.Python.definitions_['import_blue_con'] = 'import blue_con';
+        Blockly.Python.definitions_['import_beetlecar_ble'] = 'import beetlecar_BLE';
     
         
         var blue_text = Blockly.Python.valueToCode(block, 'text', Blockly.Python.ORDER_ATOMIC);
@@ -401,7 +401,7 @@ return code;
         return [code, Blockly.Python.ORDER_NONE];
         };
         Blockly.Python['blue_msg'] = function(block) {
-            Blockly.Python.definitions_['import_blue_con'] = 'import blue_con';
+            Blockly.Python.definitions_['import_beetlecar_ble'] = 'import beetlecar_BLE';
         
             
             var blue_text_print = Blockly.Python.valueToCode(block, 'text_blue', Blockly.Python.ORDER_ATOMIC);
