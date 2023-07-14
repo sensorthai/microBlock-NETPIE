@@ -1042,5 +1042,169 @@ Blockly.defineBlocksWithJsonArray([
     "tooltip": "",
     "helpUrl": ""
   }
+   {
+    "type": "motor_control",
+    "message0": "motor %1 move %2 at speed  %3",
+    "args0": [
+      {
+        "type": "field_dropdown",
+        "name": "mcontrol",
+        "options": [
+          [
+            "left",
+            "left"
+          ],
+          [
+            "right",
+            "right"
+          ]
+        ]
+      },
+      {
+        "type": "field_dropdown",
+        "name": "move",
+        "options": [
+          [
+            "forward",
+            "forward"
+          ],
+          [
+            "backward",
+            "backward"
+          ]
+        ]
+      },
+      {
+        "type": "field_dropdown",
+        "name": "speed",
+        "options": [
+          [
+            "50%",
+            "512"
+          ],
+          [
+            "75%",
+            "768"
+          ],
+          [
+            "100%",
+            "1023"
+          ]
+        ]
+      }
+    ],
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": 230,
+    "tooltip": "",
+    "helpUrl": ""
+  },
+  {
+    "type": "motor_control0",
+    "message0": "motor move %1 at speed %2",
+    "args0": [
+      {
+        "type": "field_dropdown",
+        "name": "motor_control0",
+        "options": [
+          [
+            "forward",
+            "forward"
+          ],
+          [
+            "backward",
+            "backward"
+          ],
+          [
+            "left",
+            "left"
+          ],
+          [
+            "right",
+            "right"
+          ]
+        ]
+      },
+      {
+        "type": "field_dropdown",
+        "name": "speed",
+        "options": [
+          [
+            "50%",
+            "512"
+          ],
+          [
+            "75%",
+            "767"
+          ],
+          [
+            "100%",
+            "1023"
+          ]
+        ]
+      }
+    ],
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": 230,
+    "tooltip": "",
+    "helpUrl": ""
+  },
+  {
+    "type": "motor_control1",
+    "message0": "motor move %1 at speed %2 for %3 sec",
+    "args0": [
+      {
+        "type": "field_dropdown",
+        "name": "motor_control1",
+        "options": [
+          [
+            "forward",
+            "forward"
+          ],
+          [
+            "backward",
+            "backward"
+          ],
+          [
+            "left",
+            "left"
+          ],
+          [
+            "right",
+            "right"
+          ]
+        ]
+      },
+      {
+        "type": "field_dropdown",
+        "name": "speed",
+        "options": [
+          [
+            "50%",
+            "512"
+          ],
+          [
+            "75%",
+            "767"
+          ],
+          [
+            "100%",
+            "1023"
+          ]
+        ]
+      },
+      {
+        "type": "field_number",
+        "name": "time",
+        "value": 0
+      }
+    ],
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": 230,
+    "tooltip": "",
+    "helpUrl": ""
+  },
          //END line tracking state
 ]);
