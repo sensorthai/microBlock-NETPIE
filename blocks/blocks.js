@@ -1235,7 +1235,7 @@ Blockly.defineBlocksWithJsonArray([
     ],
     "previousStatement": null,
     "nextStatement": null,
-    "colour": #D4AC0D,
+    "colour": "#D4AC0D",
     "tooltip": "",
     "helpUrl": ""
   },
