@@ -543,3 +543,9 @@ class SSD1306_I2C(SSD1306):
         self.i2c.writevto(self.addr, self.write_list)
         
 #END STATE OLED
+
+def adcRead(analog_pin):
+    adc = machine.ADC(machine.Pin(analog_pin))
+    adc.atten(machine.ADC.ATTN_11DB)
+    adc.width(machine.ADC.WIDTH_12BIT)
+    return adc.read()
