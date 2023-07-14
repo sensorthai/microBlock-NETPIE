@@ -491,7 +491,7 @@ def left_duration(speed, duration):
   RMotor2.off()
   pwm4.duty(0)
 
-def motor_left(speed):
+def motor_right(speed):
   LMotor.off()
   pwm1.duty(0)
   RMotor.on()
@@ -501,7 +501,7 @@ def motor_left(speed):
   RMotor2.off()
   pwm4.duty(0)
 
-def motor_right(speed):
+def motor_left(speed):
   LMotor.on()
   pwm1.duty(speed)
   RMotor.off()
