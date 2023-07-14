@@ -414,14 +414,14 @@
       //IR_START
       Blockly.Python['ir_get_sig'] = function(block) {
           
-          Blockly.Python.definitions_['import_beetlecar_ir'] = 'import beetlecar_ir';
+          Blockly.Python.definitions_['import_beetlecar_ir'] = 'import beetlecar_IR';
           
       
           var code = '#while True:\ncommand = beetlecar_ir.read_ircode(beetlecar_ir.ird)\nprint(command)\ntime.sleep(1)'
           return code;
         };
   Blockly.Python['ir_com'] = function(block) {
-    Blockly.Python.definitions_['import_beetlecar_ir'] = 'import beetlecar_ir';
+    Blockly.Python.definitions_['import_beetlecar_ir'] = 'import beetlecar_IR';
         
         
       var ir_but = block.getFieldValue('ir_but');
