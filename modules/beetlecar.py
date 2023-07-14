@@ -19,6 +19,9 @@ import os
 
 
 
+
+
+
 #button state
 buttonA_pin = 18
 buttonB_pin = 5
@@ -368,6 +371,125 @@ def right(speed):
   pwm3.duty(0)
   RMotor2.off()
   pwm4.duty(0)
+
+def left_fw(speed):
+  LMotor.on()
+  pwm1.duty(speed)
+  RMotor.off()
+  pwm2.duty(0)
+  LMotor2.off()
+  pwm3.duty(0)
+  RMotor2.off()
+  pwm4.duty(0)
+
+def right_fw(speed):
+  LMotor.off()
+  pwm1.duty(0)
+  RMotor.on()
+  pwm2.duty(speed)
+  LMotor2.off()
+  pwm3.duty(0)
+  RMotor2.off()
+  pwm4.duty(0)
+
+
+def left_bw(speed):
+  LMotor.off()
+  pwm1.duty(0)
+  RMotor.off()
+  pwm2.duty(0)
+  LMotor2.on()
+  pwm3.duty(speed)
+  RMotor2.off()
+  pwm4.duty(0)
+
+
+def right_bw(speed):
+  LMotor.off()
+  pwm1.duty(0)
+  RMotor.off()
+  pwm2.duty(0)
+  LMotor2.off()
+  pwm3.duty(0)
+  RMotor2.on()
+  pwm4.duty(speed)
+
+
+def forward_duration(speed, duration):
+  LMotor.on()
+  pwm1.duty(speed)
+  RMotor.on()
+  pwm2.duty(speed)
+  LMotor2.off()
+  pwm3.duty(0)
+  RMotor2.off()
+  pwm4.duty(0)
+  time.sleep(duration)
+  LMotor.off()
+  pwm1.duty(0)
+  RMotor.off()
+  pwm2.duty(0)
+  LMotor2.off()
+  pwm3.duty(0)
+  RMotor2.off()
+  pwm4.duty(0)
+
+def backward_duration(speed, duration):
+  LMotor.off()
+  pwm1.duty(0)
+  RMotor.off()
+  pwm2.duty(0)
+  LMotor2.on()
+  pwm3.duty(speed)
+  RMotor2.on()
+  pwm4.duty(speed)
+  time.sleep(duration)
+  LMotor.off()
+  pwm1.duty(0)
+  RMotor.off()
+  pwm2.duty(0)
+  LMotor2.off()
+  pwm3.duty(0)
+  RMotor2.off()
+  pwm4.duty(0)
+
+def left_duration(speed, duration):
+  LMotor.off()
+  pwm1.duty(0)
+  RMotor.on()
+  pwm2.duty(speed)
+  LMotor2.off()
+  pwm3.duty(0)
+  RMotor2.off()
+  pwm4.duty(0)
+  time.sleep(duration)
+  LMotor.off()
+  pwm1.duty(0)
+  RMotor.off()
+  pwm2.duty(0)
+  LMotor2.off()
+  pwm3.duty(0)
+  RMotor2.off()
+  pwm4.duty(0)
+
+def right_duration(speed, duration):
+  LMotor.on()
+  pwm1.duty(speed)
+  RMotor.off()
+  pwm2.duty(0)
+  LMotor2.off()
+  pwm3.duty(0)
+  RMotor2.off()
+  pwm4.duty(0)
+  time.sleep(duration)
+  LMotor.off()
+  pwm1.duty(0)
+  RMotor.off()
+  pwm2.duty(0)
+  LMotor2.off()
+  pwm3.duty(0)
+  RMotor2.off()
+  pwm4.duty(0)
 # ตัวอย่างการใช้งาน
 #beetlecarmotor = BeetleCarMotor()
 #beetlecarmotor.stop()
@@ -544,8 +666,4 @@ class SSD1306_I2C(SSD1306):
         
 #END STATE OLED
 
-def adcRead(analog_pin):
-    adc = machine.ADC(machine.Pin(analog_pin))
-    adc.atten(machine.ADC.ATTN_11DB)
-    adc.width(machine.ADC.WIDTH_12BIT)
-    return adc.read()
+
