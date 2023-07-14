@@ -490,6 +490,26 @@ def left_duration(speed, duration):
   pwm3.duty(0)
   RMotor2.off()
   pwm4.duty(0)
+
+def motor_left(speed):
+  LMotor.off()
+  pwm1.duty(0)
+  RMotor.on()
+  pwm2.duty(speed)
+  LMotor2.off()
+  pwm3.duty(0)
+  RMotor2.off()
+  pwm4.duty(0)
+
+def motor_right(speed):
+  LMotor.on()
+  pwm1.duty(speed)
+  RMotor.off()
+  pwm2.duty(0)
+  LMotor2.off()
+  pwm3.duty(0)
+  RMotor2.off()
+  pwm4.duty(0)
 # ตัวอย่างการใช้งาน
 #beetlecarmotor = BeetleCarMotor()
 #beetlecarmotor.stop()
