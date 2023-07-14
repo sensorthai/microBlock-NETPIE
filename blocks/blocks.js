@@ -333,7 +333,7 @@ Blockly.defineBlocksWithJsonArray([
 "inputsInline": true,
 "previousStatement": null,
 "nextStatement": null,
-"colour": "#1d5722",
+"colour": "#1E8449",
 "tooltip": "",
 "helpUrl": ""
 },
@@ -586,7 +586,7 @@ Blockly.defineBlocksWithJsonArray([
           "inputsInline": true,
           "previousStatement": null,
           "nextStatement": null,
-          "colour": "#236429",
+          "colour": "#0aa83c",
           "tooltip": "",
           "helpUrl": ""
           
@@ -638,7 +638,7 @@ Blockly.defineBlocksWithJsonArray([
         "inputsInline": true,
         "previousStatement": null,
         "nextStatement": null,
-        "colour": "#4B0082",
+        "colour": "#148F77",
         "tooltip": "",
         "helpUrl": ""
       },/////////////////////////////////////
@@ -660,7 +660,7 @@ Blockly.defineBlocksWithJsonArray([
         "inputsInline": true,
         "previousStatement": null,
         "nextStatement": null,
-        "colour": "#4B0082",
+        "colour": "#148F77",
         "tooltip": "",
         "helpUrl": ""
       },
@@ -670,7 +670,7 @@ Blockly.defineBlocksWithJsonArray([
         "inputsInline": true,
         "previousStatement": null,
         "nextStatement": null,
-        "colour": "#4B0082",
+        "colour": "#148F77",
         "tooltip": "",
         "helpUrl": ""
       },
@@ -680,7 +680,7 @@ Blockly.defineBlocksWithJsonArray([
         "inputsInline": true,
         "previousStatement": null,
         "nextStatement": null,
-        "colour": "#4B0082",
+        "colour": "#148F77",
         "tooltip": "",
         "helpUrl": ""
       },
@@ -753,20 +753,11 @@ Blockly.defineBlocksWithJsonArray([
     "inputsInline": true,
     //"previousStatement": null,
     "nextStatement": null,
-    "colour": "	#4682b4",
+    "colour": "#3498DB",
     "tooltip": "",
     "helpUrl": ""
   },
- { 
-    "type": "blue_con",
-    "message0": "Bluetooth ON",
-    "inputsInline": true,
-    //"previousStatement": null,
-    "nextStatement": null,
-    "colour": "	#4682b4",
-    "tooltip": "",
-    "helpUrl": ""
-  },
+ 
   {
     "type": "blue_command",
     "message0": "Typing command is : %1",
@@ -780,7 +771,7 @@ Blockly.defineBlocksWithJsonArray([
   "inputsInline": true,
   //"peviousStatement": null,
   //"nextStatement": null,
-  "colour": "#4682b4",
+  "colour": "#3498DB",
   "tooltip": "",
   "helpUrl": ""
   },
@@ -796,7 +787,7 @@ Blockly.defineBlocksWithJsonArray([
     "inputsInline": true,
     "previousStatement": null,
     "nextStatement": null,
-    "colour": "	#4682b4",
+    "colour": "	#3498DB",
     "tooltip": "",
     "helpUrl": ""
   },
@@ -808,7 +799,7 @@ Blockly.defineBlocksWithJsonArray([
     "inputsInline": true,
     "previousStatement": null,
     "nextStatement": null,
-    "colour": " #FE0000",
+    "colour": " #D01400",
     "tooltip": "",
     "helpUrl": ""
   },
@@ -880,7 +871,7 @@ Blockly.defineBlocksWithJsonArray([
 "inputsInline": true,
 //"peviousStatement": null,
 //"nextStatement": null,
-"colour": "#FE0000",
+"colour": "#D01400",
 "tooltip": "",
 "helpUrl": ""
 
@@ -984,7 +975,7 @@ Blockly.defineBlocksWithJsonArray([
     ],
     "previousStatement": null,
     "nextStatement": null,
-    "colour": 15,
+    "colour": "#D4AC0D",
     "tooltip": "",
     "helpUrl": ""
   },
@@ -1038,7 +1029,7 @@ Blockly.defineBlocksWithJsonArray([
       }
     ],
     "output": null,
-    "colour": 15,
+    "colour": "#D4AC0D",
     "tooltip": "",
     "helpUrl": ""
   },
@@ -1095,7 +1086,7 @@ Blockly.defineBlocksWithJsonArray([
     ],
     "previousStatement": null,
     "nextStatement": null,
-    "colour": 230,
+    "colour": "#D4AC0D",
     "tooltip": "",
     "helpUrl": ""
   },
@@ -1146,7 +1137,7 @@ Blockly.defineBlocksWithJsonArray([
     ],
     "previousStatement": null,
     "nextStatement": null,
-    "colour": 230,
+    "colour": "#D4AC0D",
     "tooltip": "",
     "helpUrl": ""
   },
@@ -1202,10 +1193,9 @@ Blockly.defineBlocksWithJsonArray([
     ],
     "previousStatement": null,
     "nextStatement": null,
-    "colour": 230,
+    "colour": "#D4AC0D",
     "tooltip": "",
     "helpUrl": ""
   },
          //END line tracking state
 ]);
-
