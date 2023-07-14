@@ -577,72 +577,21 @@ Blockly.Python.definitions_['import_beetlecar'] = 'import beetlecar';
   return code;
 };
 Blockly.Python['motor_control2'] = function(block) {
-  Blockly.Python.definitions_['import_machine'] = 'import machine';
-  Blockly.Python.definitions_['import_time'] = 'import time';
+    Blockly.Python.definitions_['import_beetlecar'] = 'import beetlecar';
+  
   var dropdown_motor_control2 = block.getFieldValue('motor_control2');
   var speed = block.getFieldValue('speed');
 
-  Blockly.Python.definitions_['Motor_variables'] =
-  'LMotor = machine.Pin(27, machine.Pin.OUT)\n' +
-  'LMotor2 = machine.Pin(14, machine.Pin.OUT)\n' +
-  'RMotor = machine.Pin(25, machine.Pin.OUT)\n' +
-  'RMotor2 = machine.Pin(26, machine.Pin.OUT)\n';
-
-Blockly.Python.definitions_['PWM_variables'] =
-  'pwm1 = machine.PWM(LMotor)\n' +
-  'pwm2 = machine.PWM(RMotor)\n' + 
-  'pwm3 = machine.PWM(LMotor2)\n' +
-  'pwm4 = machine.PWM(RMotor2)\n';
 
   var code = '';
   if (dropdown_motor_control2 == 'forward') {
-    Blockly.Python.definitions_['Forward'] =
-      'def ' + Blockly.Python.variableDB_.getName('forward', Blockly.Python.NAME_TYPE) + '(speed):\n' +
-      '  LMotor.on()\n' +
-      '  pwm1.duty(speed)\n' +
-      '  RMotor.on()\n' +
-      '  pwm2.duty(speed)\n' +
-      '  LMotor2.off()\n' +
-      '  pwm3.duty(0)\n' +
-      '  RMotor2.off()\n' +
-      '  pwm4.duty(0)\n';
-    code = Blockly.Python.variableDB_.getName('forward', Blockly.Python.NAME_TYPE) + '(' + speed + ')\n';
+   code = `beetlecar.forward(${speed})`;
   } else if (dropdown_motor_control2 == 'backward') {
-    Blockly.Python.definitions_['Backward'] =
-      'def ' + Blockly.Python.variableDB_.getName('backward', Blockly.Python.NAME_TYPE) + '(speed):\n' +
-      '  LMotor.off()\n' +
-      '  pwm1.duty(0)\n' +
-      '  RMotor.off()\n' +
-      '  pwm2.duty(0)\n' +
-      '  LMotor2.on()\n' +
-      '  pwm3.duty(speed)\n' +
-      '  RMotor2.on()\n' +
-      '  pwm4.duty(speed)\n';
-    code = Blockly.Python.variableDB_.getName('backward', Blockly.Python.NAME_TYPE) + '(' + speed + ')\n';
+   code = `beetlecar.backward(${speed})`;
   } else if (dropdown_motor_control2 == 'left') {
-    Blockly.Python.definitions_['Left'] =
-      'def ' + Blockly.Python.variableDB_.getName('left', Blockly.Python.NAME_TYPE) + '(speed):\n' +
-      '  LMotor.off()\n' +
-      '  pwm1.duty(0)\n' +
-      '  RMotor.on()\n' +
-      '  pwm2.duty(speed)\n' +
-      '  LMotor2.off()\n' +
-      '  pwm3.duty(0)\n' +
-      '  RMotor2.off()\n' +
-      '  pwm4.duty(0)\n';
-    code = Blockly.Python.variableDB_.getName('left', Blockly.Python.NAME_TYPE) + '(' + speed + ')\n';
+   code = `beetlecar.motor_left(${speed})`;
   } else if (dropdown_motor_control2 == 'right') {
-    Blockly.Python.definitions_['Right'] =
-      'def ' + Blockly.Python.variableDB_.getName('right', Blockly.Python.NAME_TYPE) + '(speed):\n' +
-      '  LMotor.on()\n' +
-      '  pwm1.duty(speed)\n' +
-      '  RMotor.off()\n' +
-      '  pwm2.duty(0)\n' +
-      '  LMotor2.off()\n' +
-      '  pwm3.duty(0)\n' +
-      '  RMotor2.off()\n' +
-      '  pwm4.duty(0)\n';
-    code = Blockly.Python.variableDB_.getName('right', Blockly.Python.NAME_TYPE) + '(' + speed + ')\n';
+   code = `beetlecar.motor_right(${speed})`;
   }
   return code;
 };
