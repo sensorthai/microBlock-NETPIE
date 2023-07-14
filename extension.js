@@ -4,7 +4,7 @@
     author: "UP-SKILL",
     category: "",
     version: "1.0.4",
-    icon: "/static/beetle_car.jpg",
+    icon: "/static/beetle_car.png",
     color: "#4A7CCC",
     blocks: [
        
