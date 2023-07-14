@@ -254,7 +254,16 @@ pwm1 = machine.PWM(LMotor)
 pwm2 = machine.PWM(RMotor)
 pwm3 = machine.PWM(LMotor2)
 pwm4 = machine.PWM(RMotor2)
-
+def stop():
+  LMotor.off()
+  pwm1.duty(0)
+  RMotor.off()
+  pwm2.duty(0)
+  LMotor2.off()
+  pwm3.duty(0)
+  RMotor2.off()
+  pwm4.duty(0)
+  
 def forward_forsec(duration, speed):
   LMotor.on()
   pwm1.duty(speed)
