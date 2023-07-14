@@ -453,7 +453,7 @@ def backward_duration(speed, duration):
   RMotor2.off()
   pwm4.duty(0)
 
-def left_duration(speed, duration):
+def right_duration(speed, duration):
   LMotor.off()
   pwm1.duty(0)
   RMotor.on()
@@ -472,7 +472,7 @@ def left_duration(speed, duration):
   RMotor2.off()
   pwm4.duty(0)
 
-def right_duration(speed, duration):
+def left_duration(speed, duration):
   LMotor.on()
   pwm1.duty(speed)
   RMotor.off()
