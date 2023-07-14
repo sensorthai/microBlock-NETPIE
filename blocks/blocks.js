@@ -1101,7 +1101,7 @@ Blockly.defineBlocksWithJsonArray([
   },
   {
     "type": "motor_control0",
-    "message0": "motor move %1 at speed %2",
+    "message0": "motor %1 move at speed %2",
     "args0": [
       {
         "type": "field_dropdown",
@@ -1152,7 +1152,7 @@ Blockly.defineBlocksWithJsonArray([
   },
   {
     "type": "motor_control1",
-    "message0": "motor move %1 at speed %2 for %3 sec",
+    "message0": "motor %1 move at speed %2 for %3 sec",
     "args0": [
       {
         "type": "field_dropdown",
