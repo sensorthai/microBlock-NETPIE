@@ -1197,5 +1197,46 @@ Blockly.defineBlocksWithJsonArray([
     "tooltip": "",
     "helpUrl": ""
   },
+ 
          //END line tracking state
+   {
+    "type": "motor_control2",
+    "message0": "motor move %1 at speed %2",
+    "args0": [
+      {
+        "type": "field_dropdown",
+        "name": "motor_control2",
+        "options": [
+          [
+            "forward",
+            "forward"
+          ],
+          [
+            "backward",
+            "backward"
+          ],
+          [
+            "left",
+            "left"
+          ],
+          [
+            "right",
+            "right"
+          ]
+        ]
+      },
+      {
+        "type": "field_number",
+        "name": "speed",
+        "value": 0,
+        "min": 0,
+        "max": 1023
+      }
+    ],
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": #D4AC0D,
+    "tooltip": "",
+    "helpUrl": ""
+  },
 ]);
