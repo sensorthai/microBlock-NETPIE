@@ -616,7 +616,7 @@ Blockly.defineBlocksWithJsonArray([
 ], 
 "output": ["Number", "Boolean"],
 "inputsInline": true,
-"colour": "#27AE60",
+"colour": "#1F618D",
 "tooltip": "",
 "helpUrl": ""
 //-----------------------------------------^
@@ -975,7 +975,7 @@ Blockly.defineBlocksWithJsonArray([
     ],
     "previousStatement": null,
     "nextStatement": null,
-    "colour": "#D4AC0D",
+    "colour": "#D35400",
     "tooltip": "",
     "helpUrl": ""
   },
@@ -1029,7 +1029,7 @@ Blockly.defineBlocksWithJsonArray([
       }
     ],
     "output": null,
-    "colour": "#D4AC0D",
+    "colour": "#D35400",
     "tooltip": "",
     "helpUrl": ""
   },
