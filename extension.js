@@ -98,6 +98,14 @@
                                 </block>
                             `
                         },
+                        {
+                            xml: `
+                                <block type="motor_control2">
+                                    <field name="motor_control2">0</field>
+                                    <field name="speed">0</field>
+                                </block>
+                            `
+                        },
                         //Motor End /////////////////////////////////
                         //Line tracking start
                        {
