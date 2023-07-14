@@ -73,6 +73,30 @@
                                     <field name="speed">0</field>
                                 </block>
                             `
+                        },{
+                            xml: `
+                                <block type="motor_control">
+                                    <field name="mcontrol">0</field>
+                                    <field name="move">0</field>
+                                    <field name="speed">0</field>
+                                </block>
+                            `
+                        },
+                        {
+                            xml: `
+                                <block type="motor_control0">
+                                    <field name="motor_control0">0</field>
+                                    <field name="speed">0</field>
+                                </block>
+                            `
+                        },
+                        {
+                            xml: `
+                                <block type="motor_control1">
+                                    <field name="motor_control1">0</field>
+                                    <field name="speed">0</field>
+                                </block>
+                            `
                         },
                         //Motor End /////////////////////////////////
                         //Line tracking start
@@ -96,6 +120,7 @@
                                 </block>
                             `
                         },
+        
                         //Line tracking END
                         {
                             xml: '<label text="OLED"></label>', 
