@@ -415,6 +415,7 @@
       Blockly.Python['ir_get_sig'] = function(block) {
           
           Blockly.Python.definitions_['import_beetlecar_ir'] = 'import beetlecar_IR';
+          Blockly.Python.definitions_['import_time'] = 'import time';
           
       
           var code = '#while True:\ncommand = beetlecar_ir.read_ircode(beetlecar_ir.ird)\nprint(command)\ntime.sleep(1)'
