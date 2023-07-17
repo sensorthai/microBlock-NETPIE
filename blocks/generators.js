@@ -429,39 +429,39 @@
         
       code = '';;
       if(ir_but == "1"){
-        code = `beetlecar_ir.command_reader() == "1"`;
+        code = `beetlecar_IR.command_reader() == "1"`;
       }else if(ir_but == "2"){
-        code = `beetlecar_ir.command_reader() == "2"`;
+        code = `beetlecar_IR.command_reader() == "2"`;
       }else if(ir_but == "3"){
-        code = `beetlecar_ir.command_reader() == "3"`;
+        code = `beetlecar_IR.command_reader() == "3"`;
       }else if(ir_but == "4"){
-        code = `beetlecar_ir.command_reader() == "4"`;
+        code = `beetlecar_IR.command_reader() == "4"`;
       }else if(ir_but == "5"){
-        code = `beetlecar_ir.command_reader() == "5"`;
+        code = `beetlecar_IR.command_reader() == "5"`;
       }else if(ir_but == "6"){
-        code = `beetlecar_ir.command_reader() == "6"`;
+        code = `beetlecar_IR.command_reader() == "6"`;
       }else if(ir_but == "7"){
-        code = `beetlecar_ir.command_reader() == "7"`;
+        code = `beetlecar_IR.command_reader() == "7"`;
       }else if(ir_but == "8"){
-        code = `beetlecar_ir.command_reader() == "8"`;
+        code = `beetlecar_IR.command_reader() == "8"`;
       }else if(ir_but == "9"){
-        code = `beetlecar_ir.command_reader() == "9"`;
+        code = `beetlecar_IR.command_reader() == "9"`;
       }else if(ir_but == "0"){
-        code = `beetlecar_ir.command_reader() == "0"`;
+        code = `beetlecar_IR.command_reader() == "0"`;
       }else if(ir_but == "#"){
-        code = `beetlecar_ir.command_reader() == "#"`;
+        code = `beetlecar_IR.command_reader() == "#"`;
       }else if(ir_but == "*"){
-        code = `beetlecar_ir.command_reader() == "*"`;
+        code = `beetlecar_IR.command_reader() == "*"`;
       }else if(ir_but == "Up"){
-        code = `beetlecar_ir.command_reader() == "Up"`;
+        code = `beetlecar_IR.command_reader() == "Up"`;
       }else if(ir_but == "Down"){
-        code = `beetlecar_ir.command_reader() == "Down"`;
+        code = `beetlecar_IR.command_reader() == "Down"`;
       }else if(ir_but == "Left"){
-        code = `beetlecar_ir.command_reader() == "Left"`;
+        code = `beetlecar_IR.command_reader() == "Left"`;
       }else if(ir_but == "Right"){
-        code = `beetlecar_ir.command_reader() == "Right"`;
+        code = `beetlecar_IR.command_reader() == "Right"`;
       }else if(ir_but == "Ok"){
-        code = `beetlecar_ir.command_reader() == "Ok"`;
+        code = `beetlecar_IR.command_reader() == "Ok"`;
       }
       return [code, Blockly.Python.ORDER_NONE];
     };
