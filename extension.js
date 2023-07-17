@@ -1,5 +1,5 @@
 ({
-    name: "Bettlecar",
+    name: "Beetlecar",
     description: "",
     author: "UP-SKILL",
     category: "",
