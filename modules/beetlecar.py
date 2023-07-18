@@ -613,32 +613,5 @@ class OLED:
     def text(self, string, x, y, color=1):
         self.framebuf.text(string, x, y, color)
 
-# Example usage
-i2c = I2C(scl=Pin(22), sda=Pin(21))
-oled = OLED(i2c, 128, 64)
-oled.text("Hello, world!", 0, 0)
-oled.show()
 
-ultrasonic = UltrasonicSensor(2, 15)
-distance = ultrasonic.distance()
-
-button_a = Button(18)
-button_b = Button(5)
-is_button_a_pressed = button_a.is_pressed()
-is_button_b_pressed = button_b.is_pressed()
-
-neo = NeoPixel(Pin(4), 2)
-neo.on()
-neo.rainbow()
-
-buzzer = Buzzer(19)
-buzzer.play_tone(1000, 1000)
-buzzer.stop()
-
-motor = Motor(27, 14)
-motor.forward(50)
-motor.stop()
-
-ir = IR(32)
-command = ir.get_command()
 
