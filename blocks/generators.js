@@ -418,7 +418,7 @@
           Blockly.Python.definitions_['import_time'] = 'import time';
           
       
-          var code = '#while True:\ncommand = beetlecar_IR.read_ircode(beetlecar_IR.ird)\nprint(command)\ntime.sleep(1)'
+          var code = '#while True:\ncommand = beetlecar_IR.read_ircode(beetlecar_IR.ird)\nprint(command)\ntime.sleep(1)\n'
           return code;
         };
   Blockly.Python['ir_com'] = function(block) {
