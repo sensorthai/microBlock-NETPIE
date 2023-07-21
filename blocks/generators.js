@@ -548,7 +548,7 @@ Blockly.Python['motor_control0'] = function(block) {
 
   var code = '';
   if (dropdown_motor_control0 == 'forward') {
-    code = `beetlecar.forward(${dropdown_speed})\n`;
+    code = `beetlecar.forward(${dropdown_speed})/n`;
   } else if (dropdown_motor_control0 == 'backward') {
     code = `beetlecar.backward(${dropdown_speed})\n`;
   } else if (dropdown_motor_control0 == 'left') {
@@ -586,13 +586,13 @@ Blockly.Python['motor_control2'] = function(block) {
 
   var code = '';
   if (dropdown_motor_control2 == 'forward') {
-   code = `beetlecar.forward(${speed})`;
+   code = `beetlecar.forward(${speed})\n`;
   } else if (dropdown_motor_control2 == 'backward') {
-   code = `beetlecar.backward(${speed})`;
+   code = `beetlecar.backward(${speed})\n`;
   } else if (dropdown_motor_control2 == 'left') {
-   code = `beetlecar.motor_left(${speed})`;
+   code = `beetlecar.motor_left(${speed})\n`;
   } else if (dropdown_motor_control2 == 'right') {
-   code = `beetlecar.motor_right(${speed})`;
+   code = `beetlecar.motor_right(${speed}\n)`;
   }
   return code;
 };
