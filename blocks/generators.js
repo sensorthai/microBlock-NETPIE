@@ -418,7 +418,7 @@
           Blockly.Python.definitions_['import_time'] = 'import time';
           
       
-          var code = '#while True:\ncommand = beetlecar_IR.read_ircode(beetlecar_IR.ird)\nprint(command)\ntime.sleep(1)\n'
+          var code = 'command = beetlecar_IR.read_ircode(beetlecar_IR.ird)\n'
           return code;
         };
   Blockly.Python['ir_com'] = function(block) {
@@ -429,39 +429,39 @@
         
       code = '';;
       if(ir_but == "1"){
-        code = `beetlecar_IR.command_reader() == "1"`;
+        code = `command == "1"`;
       }else if(ir_but == "2"){
-        code = `beetlecar_IR.command_reader() == "2"`;
+        code = `command == "2"`;
       }else if(ir_but == "3"){
-        code = `beetlecar_IR.command_reader() == "3"`;
+        code = `command == "3"`;
       }else if(ir_but == "4"){
-        code = `beetlecar_IR.command_reader() == "4"`;
+        code = `command == "4"`;
       }else if(ir_but == "5"){
-        code = `beetlecar_IR.command_reader() == "5"`;
+        code = `command == "5"`;
       }else if(ir_but == "6"){
-        code = `beetlecar_IR.command_reader() == "6"`;
+        code = `command == "6"`;
       }else if(ir_but == "7"){
-        code = `beetlecar_IR.command_reader() == "7"`;
+        code = `command == "7"`;
       }else if(ir_but == "8"){
-        code = `beetlecar_IR.command_reader() == "8"`;
+        code = `command == "8"`;
       }else if(ir_but == "9"){
-        code = `beetlecar_IR.command_reader() == "9"`;
+        code = `command == "9"`;
       }else if(ir_but == "0"){
-        code = `beetlecar_IR.command_reader() == "0"`;
+        code = `command == "0"`;
       }else if(ir_but == "#"){
-        code = `beetlecar_IR.command_reader() == "#"`;
+        code = `command == "#"`;
       }else if(ir_but == "*"){
-        code = `beetlecar_IR.command_reader() == "*"`;
+        code = `command == "*"`;
       }else if(ir_but == "Up"){
-        code = `beetlecar_IR.command_reader() == "Up"`;
+        code = `command == "Up"`;
       }else if(ir_but == "Down"){
-        code = `beetlecar_IR.command_reader() == "Down"`;
+        code = `command == "Down"`;
       }else if(ir_but == "Left"){
-        code = `beetlecar_IR.command_reader() == "Left"`;
+        code = `command == "Left"`;
       }else if(ir_but == "Right"){
-        code = `beetlecar_IR.command_reader() == "Right"`;
+        code = `command == "Right"`;
       }else if(ir_but == "Ok"){
-        code = `beetlecar_IR.command_reader() == "Ok"`;
+        code = `command == "Ok"`;
       }
       return [code, Blockly.Python.ORDER_NONE];
     };
