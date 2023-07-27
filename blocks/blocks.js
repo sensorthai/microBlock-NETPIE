@@ -49,259 +49,7 @@ Blockly.defineBlocksWithJsonArray([
   "tooltip": "",
   "helpUrl": ""
 },
-{
-  "type": "moveAward",
-  "message0": "MoveForward for  %1 Second at Speed  %2",
-  "args0": [
-    {
-      "type": "field_number",
-      "name": "move_sec",
-      "value": 0
-    },
-    {
-      "type": "field_dropdown",
-      "name": "speed",
-      "options": [
-        [
-          "50%",
-          "512"
-        ],
-        [
-          "75%",
-          "767"
-        ],
-        [
-          "100%",
-          "1023"
-        ]
-      ]
-    }
-  ],
-  "previousStatement": null,
-  "nextStatement": null,
-  "colour": "#D4AC0D",
-  "tooltip": "",
-  "helpUrl": ""
-},
 
-{
-  "type": "moveBack",
-  "message0": "MoveBack for  %1 Second at Speed  %2",
-  "args0": [
-    {
-      "type": "field_number",
-      "name": "move_sec",
-      "value": 0
-    },
-    {
-      "type": "field_dropdown",
-      "name": "speed",
-      "options": [
-        [
-          "50%",
-          "512"
-        ],
-        [
-          "75%",
-          "767"
-        ],
-        [
-          "100%",
-          "1023"
-        ]
-      ]
-    }
-  ],
-  "previousStatement": null,
-  "nextStatement": null,
-  "colour": "#D4AC0D",
-  "tooltip": "",
-  "helpUrl": ""
-},
-{
-  "type": "moveLeft",
-  "message0": "MoveLeft for  %1 Second at Speed  %2",
-  "args0": [
-    {
-      "type": "field_number",
-      "name": "move_sec",
-      "value": 0
-    },
-    {
-      "type": "field_dropdown",
-      "name": "speed",
-      "options": [
-        [
-          "50%",
-          "512"
-        ],
-        [
-          "75%",
-          "767"
-        ],
-        [
-          "100%",
-          "1023"
-        ]
-      ]
-    }
-  ],
-  "previousStatement": null,
-  "nextStatement": null,
-  "colour": "#D4AC0D",
-  "tooltip": "",
-  "helpUrl": ""
-},
-{
-  "type": "moveRight",
-  "message0": "MoveRight for  %1 Second at Speed  %2",
-  "args0": [
-    {
-      "type": "field_number",
-      "name": "move_sec",
-      "value": 0
-    },
-    {
-      "type": "field_dropdown",
-      "name": "speed",
-      "options": [
-        [
-          "50%",
-          "512"
-        ],
-        [
-          "75%",
-          "767"
-        ],
-        [
-          "100%",
-          "1023"
-        ]
-      ]
-    }
-  ],
-  "previousStatement": null,
-  "nextStatement": null,
-  "colour": "#D4AC0D",
-  "tooltip": "",
-  "helpUrl": ""
-},
-{
-  "type": "Forward",
-  "message0": "MoveForward at Speed  %1",
-  "args0": [
-    {
-      "type": "field_dropdown",
-      "name": "speed",
-      "options": [
-        [
-          "50%",
-          "512"
-        ],
-        [
-          "75%",
-          "767"
-        ],
-        [
-          "100%",
-          "1023"
-        ]
-      ]
-    }
-  ],
-  "previousStatement": null,
-  "nextStatement": null,
-  "colour": "#D4AC0D",
-  "tooltip": "",
-  "helpUrl": ""
-},
-{
-  "type": "Backward",
-  "message0": "MoveBackward at Speed  %1",
-  "args0": [
-    {
-      "type": "field_dropdown",
-      "name": "speed",
-      "options": [
-        [
-          "50%",
-          "512"
-        ],
-        [
-          "75%",
-          "767"
-        ],
-        [
-          "100%",
-          "1023"
-        ]
-      ]
-    }
-  ],
-  "previousStatement": null,
-  "nextStatement": null,
-  "colour": "#D4AC0D",
-  "tooltip": "",
-  "helpUrl": ""
-},
-{
-  "type": "Left",
-  "message0": "MoveLeft at Speed  %1",
-  "args0": [
-    {
-      "type": "field_dropdown",
-      "name": "speed",
-      "options": [
-        [
-          "50%",
-          "512"
-        ],
-        [
-          "75%",
-          "767"
-        ],
-        [
-          "100%",
-          "1023"
-        ]
-      ]
-    }
-  ],
-  "previousStatement": null,
-  "nextStatement": null,
-  "colour": "#D4AC0D",
-  "tooltip": "",
-  "helpUrl": ""
-},
-{
-  "type": "Right",
-  "message0": "MoveRight at Speed  %1",
-  "args0": [
-    {
-      "type": "field_dropdown",
-      "name": "speed",
-      "options": [
-        [
-          "50%",
-          "512"
-        ],
-        [
-          "75%",
-          "767"
-        ],
-        [
-          "100%",
-          "1023"
-        ]
-      ]
-    }
-  ],
-  "previousStatement": null,
-  "nextStatement": null,
-  "colour": "#D4AC0D",
-  "tooltip": "",
-  "helpUrl": ""
-},
 //Motor End //////////////////////////////////
 
 //servo Start ////////////////////////////////
@@ -314,11 +62,11 @@ Blockly.defineBlocksWithJsonArray([
       "name": "pin",
       "options": [
         [
-          "Up",
+          "Lift Up/Lift Down",
           "17"
         ],
         [
-          "Hold",
+          "Clamp",
           "16"
         ]
       ]
@@ -339,7 +87,7 @@ Blockly.defineBlocksWithJsonArray([
 },
 //servo End //////////////////////////////////
 
-//OLED Start /////////////////////////////////
+/*OLED Start /////////////////////////////////
 
 {
   "type": "oled_init",
@@ -486,7 +234,7 @@ Blockly.defineBlocksWithJsonArray([
 },
 
 
-//OLED End ///////////////////////////////////
+OLED End *////////////////////////////////////
 
 //Buzzer Start ///////////////////////////////
 {
@@ -749,7 +497,13 @@ Blockly.defineBlocksWithJsonArray([
  //BLUE_START
  { 
     "type": "blue_con",
-    "message0": "Bluetooth ON",
+    "message0": "Bluetooth Name: %1 ON",
+    "args0": [
+      {
+        "type": "input_value",
+        "name": "blue_name"
+      },
+    ],
     "inputsInline": true,
     //"previousStatement": null,
     "nextStatement": null,
@@ -791,6 +545,7 @@ Blockly.defineBlocksWithJsonArray([
     "tooltip": "",
     "helpUrl": ""
   },
+  
   //BLUE_END
 //IR_START
 { 
@@ -878,107 +633,27 @@ Blockly.defineBlocksWithJsonArray([
 },
   //IR_END
  //Line tracking STATE
-  {
-    "type": "linetracking_pin",
-    "message0": "Line Tracking sensor read pin1:  %1 pin2: %2 pin3: %3",
-    "args0": [
-      {
-        "type": "field_dropdown",
-        "name": "sensor1",
-        "options": [
-          [
-            "SS1",
-            "36"
-          ],
-          [
-            "SS2",
-            "39"
-          ],
-          [
-            "SS3",
-            "34"
-          ],
-          [
-            "SS4",
-            "35"
-          ],
-          [
-            "SS5",
-            "13"
-          ],
-          [
-            "None",
-            "None"
-          ]
-        ]
-      },
-      {
-        "type": "field_dropdown",
-        "name": "sensor2",
-        "options": [
-          [
-            "SS1",
-            "36"
-          ],
-          [
-            "SS2",
-            "39"
-          ],
-          [
-            "SS3",
-            "34"
-          ],
-          [
-            "SS4",
-            "35"
-          ],
-          [
-            "SS5",
-            "13"
-          ],
-          [
-            "None",
-            "None"
-          ]
-        ]
-      },
-      {
-        "type": "field_dropdown",
-        "name": "sensor3",
-        "options": [
-          [
-            "SS1",
-            "36"
-          ],
-          [
-            "SS2",
-            "39"
-          ],
-          [
-            "SS3",
-            "34"
-          ],
-          [
-            "SS4",
-            "35"
-          ],
-          [
-            "SS5",
-            "13"
-          ],
-          [
-            "None",
-            "None"
-          ]
-        ]
-      }
-    ],
-    "previousStatement": null,
-    "nextStatement": null,
-    "colour": "#D35400",
-    "tooltip": "",
-    "helpUrl": ""
-  },
+ {
+  "type": "linetracking_threshold",
+  "message0": "Line tracking set value threshold: Black  %1 White %2",
+  "args0": [
+    {
+      "type": "field_number",
+      "name": "black",
+      "value": 0
+    },
+    {
+      "type": "field_number",
+      "name": "white",
+      "value": 0
+    }
+  ],
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": "#D68910",
+  "tooltip": "",
+  "helpUrl": ""
+},
   {
     "type": "linetracking_sensor",
     "message0": "read %1 %2 threshold",
@@ -1029,7 +704,7 @@ Blockly.defineBlocksWithJsonArray([
       }
     ],
     "output": null,
-    "colour": "#D35400",
+    "colour": "#D68910",
     "tooltip": "",
     "helpUrl": ""
   },
@@ -1090,6 +765,7 @@ Blockly.defineBlocksWithJsonArray([
     "tooltip": "",
     "helpUrl": ""
   },
+  
   {
     "type": "motor_control0",
     "message0": "motor %1 move at speed %2",
@@ -1198,7 +874,7 @@ Blockly.defineBlocksWithJsonArray([
     "helpUrl": ""
   },
  
-         //END line tracking state
+        
    {
     "type": "motor_control2",
     "message0": "motor move %1 at speed %2",
@@ -1239,4 +915,100 @@ Blockly.defineBlocksWithJsonArray([
     "tooltip": "",
     "helpUrl": ""
   },
+  ////////MOTOR 2.0///////////
+  {
+    "type": "new_motor",
+    "message0": "Move %1 PWM %2",
+    "args0": [
+      {
+        "type": "field_dropdown",
+        "name": "move",
+        "options": [
+          [
+            "FORWARD",
+            "forward"
+          ],
+          [
+            "BACKWARD",
+            "backward"
+          ],
+          [
+            "LEFT",
+            "left"
+          ],
+          [
+            "RIGHT",
+            "right"
+          ]
+        ]
+      },
+      {
+        "type": "field_number",
+        "name": "speed",
+        "value": 0,
+        "min": 0,
+        "max": 1023
+      }
+    ],
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": 230,
+    "tooltip": "",
+    "helpUrl": ""
+  },
+  {
+    "type": "new_motor2",
+    "message0": "Move %1 PWM %2 for %3 sec",
+    "args0": [
+      {
+        "type": "field_dropdown",
+        "name": "move",
+        "options": [
+          [
+            "FORWARD",
+            "forward"
+          ],
+          [
+            "BACKWARD",
+            "backward"
+          ],
+          [
+            "LEFT",
+            "left"
+          ],
+          [
+            "RIGHT",
+            "right"
+          ]
+        ]
+      },
+      {
+        "type": "field_number",
+        "name": "speed",
+        "value": 0,
+        "min": 0,
+        "max": 1023
+      },
+      {
+        "type": "field_number",
+        "name": "time",
+        "value": 0
+      }
+    ],
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": 230,
+    "tooltip": "",
+    "helpUrl": ""
+  },
+  {
+    "type": "newstopMotor",
+    "message0": "stopMotor",
+    "inputsInline": true,
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": 230,
+    "tooltip": "",
+    "helpUrl": ""
+  }
 ]);
