@@ -8,115 +8,34 @@
     color: "#4A7CCC",
     blocks: [
        
-{
-                            xml: '<label text="Motor Beetle Car v1"></label>', 
-                        },
-                        //Motor Strat ///////////////////////////////
-
-                        "stopMotor",
-                        {
-                            xml: `
-                                <block type="Forward">
-                                    <field name="speed">0</field>
-                                </block>
-                            `
-                        },
-                        {
-                            xml: `
-                                <block type="Backward">
-                                    <field name="speed">0</field>
-                                </block>
-                            `
-                        },
-                        {
-                            xml: `
-                                <block type="Left">
-                                    <field name="speed">0</field>
-                                </block>
-                            `
-                        },
-                        {
-                            xml: `
-                                <block type="Right">
-                                    <field name="speed">0</field>
-                                </block>
-                            `
-                        },
-                        {
-                            xml: `
-                                <block type="moveAward">
-                                    <field name="move_sec">0</field>
-                                    <field name="speed">0</field>
-                                </block>
-                            `
-                        },
-                        {
-                            xml: `
-                                <block type="moveBack">
-                                    <field name="move_sec">0</field>
-                                    <field name="speed">0</field>
-                                </block>
-                            `
-                        },
-                        {
-                            xml: `
-                                <block type="moveRight">
-                                    <field name="move_sec">0</field>
-                                    <field name="speed">0</field>
-                                </block>
-                            `
-                        },
-                        {
-                            xml: `
-                                <block type="moveLeft">
-                                    <field name="move_sec">0</field>
-                                    <field name="speed">0</field>
-                                </block>
-                            `
-                        },{
-                            xml: `
-                                <block type="motor_control">
-                                    <field name="mcontrol">0</field>
-                                    <field name="move">0</field>
-                                    <field name="speed">0</field>
-                                </block>
-                            `
-                        },
-                        {
-                            xml: `
-                                <block type="motor_control0">
-                                    <field name="motor_control0">0</field>
-                                    <field name="speed">0</field>
-                                </block>
-                            `
-                        },
-                        {
-                            xml: `
-                                <block type="motor_control1">
-                                    <field name="motor_control1">0</field>
-                                    <field name="speed">0</field>
-                                </block>
-                            `
-                        },
-                        {
-                            xml: `
-                                <block type="motor_control2">
-                                    <field name="motor_control2">0</field>
-                                    <field name="speed">0</field>
-                                </block>
-                            `
-                        },
+ {
+                                                    xml: `
+                                                    <block type="new_motor">
+                                                        <field name="move">0</field>
+                                                        <field name="speed">180</field>
+                                                    </block>
+                                                `
+                                                },
+                                                {
+                                                    xml: `
+                                                    <block type="new_motor2">
+                                                        <field name="move">0</field>
+                                                        <field name="speed">180</field>
+                                                        <field name="time">0</field>
+                                                    </block>
+                                                `
+                                                },
+                                                "newstopMotor",
                         //Motor End /////////////////////////////////
                         //Line tracking start
                        {
                             xml: '<label text="Line Tracking"></label>'
                         },
-                                     {
+                        {
                             xml: `
-                                <block type="linetracking_pin">
-                                    <field name="pin1">39</field>
-                                    <field name="pin2">34</field>
-                                    <field name="pin3">35</field>
+                                <block type="linetracking_threshold">
+                                    <field name="black">0</field>
+                                    <field name="white">0</field>
                                 </block>
                             `
                         },
@@ -129,12 +48,12 @@
                             `
                         },
         
-                        //Line tracking END
+                        /*Line tracking END
                         {
                             xml: '<label text="OLED"></label>', 
                         },
 
-                        //OLED Strat////////////////////////////////
+                        OLED Strat
                          
                         "oled_init",
                         {
@@ -212,7 +131,7 @@
                         },
                         "oled_fill",
                         "oled_clear",
-                        //OLED End ///////////////////////////////////
+                        OLED End *///////////////////////////////////
 
                         {
                             xml: '<label text="Buzzer"></label>', 
@@ -299,62 +218,7 @@
                             </block>
                         `
                         },
-                        //{
-                        //    xml: '<label text="LED_Blink"></label>',
-                        //},
-                       /*{
-                            xml:`<block type="controls_forever">
-                            <statement name="block">
-                                <block type="led_onoff">
-                        <value name="pin_trig">
-                            <shadow type="math_number">
-                                <field name="NUM">Left</field>
-                            </shadow>
-                        </value>
-                        <value name="onoff">
-                            <shadow type="math_number">
-                                <field name="NUM">1</field>
-                            </shadow>
-                        </value>
-                                    <next>
-                                        <block type="controls_wait">
-                                            <value name="time">
-                                                <shadow type="math_number">
-                                                    <field name="NUM">1</field>
-                                                </shadow>
-                                            </value>
-                                            <next>
-                                                <block type="led_onoff">
-                        <value name="pin_trig">
-                            <shadow type="math_number">
-                                <field name="NUM">Left</field>
-                            </shadow>
-                        </value>
-                        <value name="onoff">
-                            <shadow type="math_number">
-                                <field name="NUM">0</field>
-                            </shadow>
-                        </value>
-                                                    <next>
-                                                        <block type="controls_wait">
-                                                            <value name="time">
-                                                                <shadow type="math_number">
-                                                                    <field name="NUM">1</field>
-                                                                </shadow>
-                                                            </value>
-                                                            
-                                                        </block>
-                                                    </next>
-                                                </block>
-                                            </next>
-                                        </block>
-                                    </next>
-                                </block>
-                            </statement>
-                        </block>`
-                       },*/
-
-                        //LED End /////////////////////////////////////
+                        
                        
                         {
                             xml: '<label text="Ultrasonic"></label>'
@@ -389,19 +253,7 @@
                             "neopixel_off",
                             "neopixel_toggle",
                             "rainbow_neo",
-                          /*  {
-                                xml: '<label text="Rainbow_Neopixel"></label>',
-                            },
-                            {
-                                xml:`<block type="controls_forever">
-                                    <statement name="block">
-                                    <block type = "rainbow_neo">
-                                    </block>
-                                    </statement>
-                                    </block>`
-                               },*/
-
-                        //NeoPixel  End ////////////////////////////////
+                          
                         
                         {
                             xml: '<label text="Switch"></label>',
@@ -434,6 +286,17 @@
                         //Toggle_Button  Start ////////////////////////////////
                         {
                             xml: '<label text="Bluetooth"></label>',
+                        },
+                        {
+                            xml:`
+                                <block type = "blue_con">
+                                    <value name = "blue_name">
+                                        <shadow type = "text">
+                                            <field name = "text">Beetlecar1</field>
+                                        </shadow>
+                                    </value>
+                                </block>
+                            `
                         },
             
                         {
@@ -474,6 +337,8 @@
                                 </block>
                             `
                         },
+                    ]
+                },
                          
 
                             ]
