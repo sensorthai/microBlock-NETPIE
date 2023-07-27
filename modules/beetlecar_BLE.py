@@ -176,4 +176,3 @@ def blue_connect():
         ble.send('LED is OFF.')
     sleep_ms(100)'''
 
-
