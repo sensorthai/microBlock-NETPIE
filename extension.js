@@ -7,7 +7,7 @@
     icon: "/static/beetle_car.png",
     color: "#4A7CCC",
     blocks: [
-                                                //////////// MOTOR 2.0 ///////////////
+                                                  //////////// MOTOR 2.0 ///////////////
                                                 {
                                                     xml: `
                                                     <block type="new_motor">
