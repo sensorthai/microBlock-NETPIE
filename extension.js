@@ -6,8 +6,13 @@
     version: "1.0.0",
     icon: "/static/beetle_car.png",
     color: "#4A7CCC",
-    blocks: [ {
+    blocks: [  {
                             xml: '<label text="Beetlecar"></label>'
+                            
+                        },
+                        {
+                            xml: '<label text="Motor"></label>'
+                            
                         },
                                                 //////////// MOTOR 2.0 ///////////////
                                                 {
