@@ -7,7 +7,9 @@
     icon: "/static/beetle_car.png",
     color: "#4A7CCC",
     blocks: [
-                                                //////////// MOTOR 2.0 ///////////////
+                                                //////////// MOTOR 2.0 ///////////////{
+                            xml: '<label text="Beetlecar"></label>'
+                        },
                                                 {
                                                     xml: `
                                                     <block type="new_motor">
@@ -27,28 +29,7 @@
                                                 },
                                                 "newstopMotor",
                         //Motor End /////////////////////////////////
-                        //Line tracking start
-                       {
-                            xml: '<label text="Line Tracking"></label>'
-                        },
-                        {
-                            xml: `
-                                <block type="linetracking_threshold">
-                                    <field name="black">0</field>
-                                    <field name="white">0</field>
-                                </block>
-                            `
-                        },
-                        {
-                            xml: `
-                                <block type="linetracking_sensor">
-                                    <field name="sensor">0</field>
-                                    <field name="operator">0</field>
-                                </block>
-                            `
-                        },
-        
-                        /*Line tracking END
+                       
                         {
                             xml: '<label text="OLED"></label>', 
                         },
@@ -133,51 +114,6 @@
                         "oled_clear",
                         OLED End *///////////////////////////////////
 
-                        {
-                            xml: '<label text="Buzzer"></label>', 
-                        },
-
-                         //Buzzer Start //////////////////////////////
-                        {
-                            xml: `
-                                <block type="buzzer1">
-                                    <value name="freq">
-                                        <shadow type="math_number">
-                                            <field name="NUM">1000</field>
-                                        </shadow>
-                                    </value>
-                                    <value name="time">
-                                        <shadow type="math_number">
-                                            <field name="NUM">1</field>
-                                        </shadow>
-                                    </value>
-                                </block>
-                            `
-                        },
-                        {
-                            xml: `
-                                <block type="buzzer2">
-                                    <value name="freq">
-                                        <shadow type="math_number">
-                                            <field name="NUM">1000</field>
-                                        </shadow>
-                                    </value>
-                                </block>
-                            `
-                        },
-                            "buzzer3",
-                    {
-                        xml: `
-                            <block type="buz_play_music">
-                                <value name="music">
-                                    <shadow type="math_number">
-                                        <field name="NUM">Happy Birth Day</field>
-                                    </shadow>
-                                </value>
-                            </block>
-                        `
-                    },
-                        //Buzzer End /////////////////////////////////
 
                         {
                             xml: '<label text="Servo"></label>', 
@@ -284,6 +220,74 @@
                             `
                         },
                         //Toggle_Button  Start ////////////////////////////////
+                            
+                        {
+                            xml: '<label text="Buzzer"></label>', 
+                        },
+
+                         //Buzzer Start //////////////////////////////
+                        {
+                            xml: `
+                                <block type="buzzer1">
+                                    <value name="freq">
+                                        <shadow type="math_number">
+                                            <field name="NUM">1000</field>
+                                        </shadow>
+                                    </value>
+                                    <value name="time">
+                                        <shadow type="math_number">
+                                            <field name="NUM">1</field>
+                                        </shadow>
+                                    </value>
+                                </block>
+                            `
+                        },
+                        {
+                            xml: `
+                                <block type="buzzer2">
+                                    <value name="freq">
+                                        <shadow type="math_number">
+                                            <field name="NUM">1000</field>
+                                        </shadow>
+                                    </value>
+                                </block>
+                            `
+                        },
+                            "buzzer3",
+                    {
+                        xml: `
+                            <block type="buz_play_music">
+                                <value name="music">
+                                    <shadow type="math_number">
+                                        <field name="NUM">Happy Birth Day</field>
+                                    </shadow>
+                                </value>
+                            </block>
+                        `
+                    },
+                        //Buzzer End /////////////////////////////////
+                             //Line tracking start
+                       {
+                            xml: '<label text="Line Tracking"></label>'
+                        },
+                        {
+                            xml: `
+                                <block type="linetracking_threshold">
+                                    <field name="black">0</field>
+                                    <field name="white">0</field>
+                                </block>
+                            `
+                        },
+                        {
+                            xml: `
+                                <block type="linetracking_sensor">
+                                    <field name="sensor">0</field>
+                                    <field name="operator">0</field>
+                                </block>
+                            `
+                        },
+        
+                        /*Line tracking END
                         {
                             xml: '<label text="Bluetooth"></label>',
                         },
