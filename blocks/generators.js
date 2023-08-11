@@ -1,5 +1,5 @@
 
-    //Motor Strat //////////////////////////
+  /*  //Motor Strat //////////////////////////
     Blockly.Python['stopMotor'] = function(block) {
       Blockly.Python.definitions_['import_beetlecar'] = 'import beetlecar';
     
@@ -83,7 +83,7 @@
   var code = `beetlecar.right(${speed})\n`;
   
   return code;
-  };
+  };*/
         //Motor End ///////////////////////////////////
         
         // servo Start ////////////////////////////////
@@ -575,7 +575,7 @@ Blockly.Python['motor_control2'] = function(block) {
    code = `beetlecar.forward(${speed})\n`;
   } else if (dropdown_motor_control2 == 'backward') {
    code = `beetlecar.backward(${speed})\n`;
-  } else if (dropdown_motor_control2 == 'left') {
+  } else if (dropdown_motor_control2 == 'left') {ฟ
    code = `beetlecar.motor_left(${speed})\n`;
   } else if (dropdown_motor_control2 == 'right') {
    code = `beetlecar.motor_right(${speed})\n`;
@@ -593,13 +593,13 @@ Blockly.Python['new_motor'] = function(block) {
   if (move == 'forward') {
     code = 'beetlecar.forward' + '(' + speed + ')\n';
   } else if (move == 'backward') {
-    Blockly.Python.definitions_['Backward'] =
+    
     code = 'beetlecar.backward' + '(' + speed + ')\n';
   } else if (move == 'left') {
-    Blockly.Python.definitions_['Left'] =
+    
     code = 'beetlecar.left' + '(' + speed + ')\n';
   } else if (move == 'right') {
-    Blockly.Python.definitions_['Right'] =
+    
     code = 'beetlecar.right' + '(' + speed + ')\n';
   }
   return code;
@@ -613,19 +613,19 @@ Blockly.Python['new_motor2'] = function(block) {
  
   var code = '';
   if (move == 'forward') {
-    Blockly.Python.definitions_['Forward_for_sec'] =
+    
       
     code = 'beetlecar.forward_for_sec' + '(' + speed + ', '+ time +')\n';
   } else if (move == 'backward') {
-    Blockly.Python.definitions_['Backward_for_sec'] =
+    
       
     code = 'beetlecar.backward_for_sec' + '(' + speed + ', '+ time +')\n';
   } else if (move == 'left') {
-    Blockly.Python.definitions_['Left_for_sec'] =
+    
       
     code = 'beetlecar.left_for_sec' + '(' + speed + ', '+ time +')\n';
   } else if (move == 'right') {
-    Blockly.Python.definitions_['Right_for_sec'] =
+    
       
     code = 'beetlecar.right_for_sec' + '(' + speed + ', '+ time +')\n';
   }
