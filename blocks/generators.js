@@ -575,7 +575,7 @@ Blockly.Python['motor_control2'] = function(block) {
    code = `beetlecar.forward(${speed})\n`;
   } else if (dropdown_motor_control2 == 'backward') {
    code = `beetlecar.backward(${speed})\n`;
-  } else if (dropdown_motor_control2 == 'left') {ฟ
+  } else if (dropdown_motor_control2 == 'left') {
    code = `beetlecar.motor_left(${speed})\n`;
   } else if (dropdown_motor_control2 == 'right') {
    code = `beetlecar.motor_right(${speed})\n`;
