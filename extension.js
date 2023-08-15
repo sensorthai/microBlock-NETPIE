@@ -4,7 +4,7 @@
     author: "UP-SKILL",
     category: "",
     version: "1.0.0",
-    icon: "/static/beetle_car.png",
+    icon: "/static/beetlecar.png",
     color: "#4A7CCC",
     blocks: [  {
                             xml: '<label text="Beetlecar"></label>'
