@@ -87,16 +87,15 @@
         //Motor End ///////////////////////////////////
         
         // servo Start ////////////////////////////////
-        Blockly.Python['servo'] = function(block) {
-        Blockly.Python.definitions_['from_machine_import_pin'] = 'from machine import Pin,PWM';
-        
-        var value_pin = block.getFieldValue('pin');
-        var value_angle = block.getFieldValue('angle');
-        //var value_pin = Blockly.Python.valueToCode(block, 'pin', Blockly.Python.ORDER_ATOMIC);
-        //var value_angle = Blockly.Python.valueToCode(block, 'angle', Blockly.Python.ORDER_ATOMIC);
-        var code = `PWM(Pin(${value_pin}), freq=50).duty(int(25.57 + (((${value_angle}) / 180.0) * 102.3)))\n`;
-        return code;
-      };
+        Blockly.Python['servo_new'] = function(block) { 
+          Blockly.Python.definitions_['import_beetlecar'] = 'import beetlecar';
+          
+          var value_pin = block.getFieldValue('pin');
+          var value_angle = block.getFieldValue('angle');
+          
+          var code = `servo(${value_pin}, ${value_angle})\n`;
+          return code;
+        };
         // servo End //////////////////////////////////
         
         //OLED Start //////////////////////////////////
