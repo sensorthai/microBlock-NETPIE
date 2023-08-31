@@ -474,7 +474,7 @@ class SSD1306_I2C(SSD1306):
 
 #SERVOR STATE START
 
-def servo(serpin, angle):
+def beetlecar_servo(serpin, angle):
   PWM(Pin(serpin), freq=50).duty(int(25.57 + (((angle) / 180.0) * 102.3)))
 
 #SERVOR STATE END
