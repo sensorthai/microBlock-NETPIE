@@ -179,7 +179,7 @@
                         //servo Start////////////////////////////////
                         {
                             xml: `
-                                <block type="servo">
+                                <block type="servo_new">  
                                     <value name="pin">
                                         <shadow type="math_number">
                                             <field name="NUM">16</field>
