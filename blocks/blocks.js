@@ -62,12 +62,12 @@ Blockly.defineBlocksWithJsonArray([
       "name": "pin",
       "options": [
         [
-          "Lift Up/Lift Down",
-          "17"
+          "Lift Up/Lift Down (S2)",//ข้อความตัวเลือก
+          "17"//ค่าที่ส่งไปให้ตัว Generators
         ],
         [
-          "Clamp",
-          "16"
+          "Clamp (S1)",//ข้อความตัวเลือกที่2
+          "16"//ค่าที่ส่งไปให้ตัว Generators
         ]
       ]
     },
