@@ -93,7 +93,7 @@
           var value_pin = block.getFieldValue('pin');
           var value_angle = block.getFieldValue('angle');
           
-          var code = `beetlecar_servo(${value_pin}, ${value_angle})\n`;
+          var code = `beetlecar.servo(${value_pin}, ${value_angle})\n`;
           return code;
         };
         // servo End //////////////////////////////////
