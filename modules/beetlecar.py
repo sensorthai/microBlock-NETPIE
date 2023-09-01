@@ -23,7 +23,7 @@ import os
 
 #SERVOR STATE START
 
-def beetlecar.servo(serpin, angle):
+def servo(serpin, angle):
     PWM(Pin(serpin), freq=50).duty(int(25.57 + (((angle) / 180.0) * 102.3)))
 
 #SERVOR STATE END
