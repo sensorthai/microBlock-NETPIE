@@ -21,7 +21,12 @@ import os
 
 
 
+#SERVOR STATE START
 
+def beetlecar_servo(serpin, angle):
+    PWM(Pin(serpin), freq=50).duty(int(25.57 + (((angle) / 180.0) * 102.3)))
+
+#SERVOR STATE END
 #button state
 buttonA_pin = 18
 buttonB_pin = 5
@@ -472,9 +477,3 @@ class SSD1306_I2C(SSD1306):
         
 #END STATE OLED
 
-#SERVOR STATE START
-
-def beetlecar_servo(serpin, angle):
-  PWM(Pin(serpin), freq=50).duty(int(25.57 + (((angle) / 180.0) * 102.3)))
-
-#SERVOR STATE END
