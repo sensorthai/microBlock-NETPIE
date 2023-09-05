@@ -252,10 +252,10 @@ LMOTOR1 = Pin(27, Pin.OUT)
 RMOTOR2 = Pin(26, Pin.OUT)
 LMOTOR2 = Pin(14, Pin.OUT)
 
-RMOTOR1_PWM = PWM(Pin(25), freq=50000)
-LMOTOR1_PWM = PWM(Pin(27), freq=50000)
-RMOTOR2_PWM = PWM(Pin(26), freq=50000)
-LMOTOR2_PWM = PWM(Pin(14), freq=50000)
+RMOTOR1_PWM = PWM(Pin(25), freq=1000)
+LMOTOR1_PWM = PWM(Pin(27), freq=1000)
+RMOTOR2_PWM = PWM(Pin(26), freq=1000)
+LMOTOR2_PWM = PWM(Pin(14), freq=1000)
 
 def forward(speed):
   RMOTOR1.on()
