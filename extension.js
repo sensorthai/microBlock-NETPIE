@@ -294,7 +294,7 @@
                             </block>
                         `
                     },
-                        {
+                        /*{
                             xml: '<label text="Bluetooth"></label>',
                         },
                         {
@@ -346,6 +346,6 @@
                                     </value>
                                 </block>
                             `
-                        },
+                        },*/
                     ]
                          });
