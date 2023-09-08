@@ -355,6 +355,66 @@ def right_for_sec(speed, duration):
   LMOTOR2_PWM.duty(int(0))
   time.sleep(duration)
   stop()
+  
+def left_forward(speed):
+    LMOTOR1.on()
+    LMOTOR1_PWM.duty(int(speed))
+    RMOTOR1.off()
+    RMOTOR1_PWM.duty(int(0))
+    LMOTOR2.off()
+    LMOTOR2_PWM.duty(int(0))
+    RMOTOR2.off()
+    RMOTOR2_PWM.duty(int(0))
+
+def left_backward(speed):
+    LMOTOR1.off()
+    LMOTOR1_PWM.duty(int(0))
+    RMOTOR1.off()
+    RMOTOR1_PWM.duty(int(0))
+    LMOTOR2.on()
+    LMOTOR2_PWM.duty(int(speed))
+    RMOTOR2.off()
+    RMOTOR2_PWM.duty(int(0))
+  
+def right_forward(speed):
+    LMOTOR1.off()
+    LMOTOR1_PWM.duty(int(0))
+    RMOTOR1.on()
+    RMOTOR1_PWM.duty(int(speed))
+    LMOTOR2.off()
+    LMOTOR2_PWM.duty(int(0))
+    RMOTOR2.off()
+    RMOTOR2_PWM.duty(int(0))
+
+def right_backward(speed):
+    LMOTOR1.off()
+    LMOTOR1_PWM.duty(int(0))
+    RMOTOR1.off()
+    RMOTOR1_PWM.duty(int(0))
+    LMOTOR2.off()
+    LMOTOR2_PWM.duty(int(0))
+    RMOTOR2.on()
+    RMOTOR2_PWM.duty(int(speed))
+  
+def all_forward(speed):
+    LMOTOR1.on()
+    LMOTOR1_PWM.duty(int(speed))
+    RMOTOR1.on()
+    RMOTOR1_PWM.duty(int(speed))
+    LMOTOR2.off()
+    LMOTOR2_PWM.duty(int(0))
+    RMOTOR2.off()
+    RMOTOR2_PWM.duty(int(0))
+  
+def all_backward(speed):
+    LMOTOR1.off()
+    LMOTOR1_PWM.duty(int(0))
+    RMOTOR1.off()
+    RMOTOR1_PWM.duty(int(0))
+    LMOTOR2.on()
+    LMOTOR2_PWM.duty(int(speed))
+    RMOTOR2.on()
+    RMOTOR2_PWM.duty(int(speed))
 
 #END STATE MOTOR
 scale5 = [523 , 554 , 587 ,622 , 659 , 698 ,739 , 783 , 830 , 880 , 932 , 987 , 1046 , 0]
