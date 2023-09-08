@@ -662,3 +662,30 @@ Blockly.Python.definitions_['import_beetlecar'] = 'import beetlecar';
                 }
                 return code;
               };
+Blockly.Python['new_motor3'] = function(block) {
+  Blockly.Python.definitions_['import_beetlecar'] = 'import beetlecar';
+
+  var motor = block.getFieldValue('motor');
+  var move = block.getFieldValue('move');
+  var speed = block.getFieldValue('speed');
+
+  if (motor == 'left' && move == 'forward') {
+    code = 'beetlecar.left_forward' + '(' + speed + ')\n';
+
+  }else if(motor == 'left' && move == 'backward'){
+    code = 'beetlecar.left_backward' + '(' + speed + ')\n';
+    
+  }else if(motor == 'right'&& move == 'forward'){
+    code = 'beetlecar.right_forward' + '(' + speed + ')\n';
+    
+  }else if(motor == 'right'&& move == 'backward'){
+    code = 'beetlecar.right_backward' + '(' + speed + ')\n';
+    
+  }else if(motor == 'all'&& move == 'forward'){
+    code = 'beetlecar.all_forward' + '(' + speed + ')\n';
+  }else{
+    code = 'beetlecar.all_backward' + '(' + speed + ')\n';
+    
+  }
+  return code;
+};
