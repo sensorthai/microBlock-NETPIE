@@ -355,6 +355,7 @@ def right_for_sec(speed, duration):
   LMOTOR2_PWM.duty(int(0))
   time.sleep(duration)
   stop()
+
   
 def left_forward(speed):
     LMOTOR1.on()
@@ -415,7 +416,7 @@ def all_backward(speed):
     LMOTOR2_PWM.duty(int(speed))
     RMOTOR2.on()
     RMOTOR2_PWM.duty(int(speed))
-
+    
 #END STATE MOTOR
 scale5 = [523 , 554 , 587 ,622 , 659 , 698 ,739 , 783 , 830 , 880 , 932 , 987 , 1046 , 0]
 
@@ -432,5 +433,12 @@ twinkle_twinkle = [0, 0, 6, 6, 9, 9, 6, 13, 5, 5, 4, 4, 2, 2, 0, 13, 6, 6, 5, 5,
 bitsy_spider = [9, 0, 0, 2, 4, 4, 13, 4, 2, 0, 2, 4, 2, 13, 4, 4, 5, 7, 13, 7, 5, 4, 5, 7, 4, 0, 0, 2, 4, 13, 4, 2, 0, 2, 4, 0, 13, 7, 7, 0, 0, 0, 2, 4, 4, 13, 4, 2, 0, 2, 4, 0]
 
 
-#END STATE OLED
+#SERVOR STATE START
 
+def servo_LiftUp(angle):
+    PWM(Pin(17), freq=50).duty(int(0.5 * angle + 31))
+
+def servo_Clamp(angle):
+    PWM(Pin(16), freq=50).duty(int((4/9) * angle + 48))
+
+#SERVOR STATE END
