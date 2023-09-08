@@ -89,7 +89,7 @@
         // servo Start ////////////////////////////////
        Blockly.Python['servo'] = function(block) { //ชื่อที่เราตั้งไว้
           
-          Blockly.Python.definitions_['from_machine_import_pin_pwm'] = 'from machine import Pin,PWM';
+          Blockly.Python.definitions_['import_beetlecar'] = 'import beetlecar';
           var value_pin = block.getFieldValue('pin');//เรียกค่าจาก %1
           var value_angle = block.getFieldValue('angle');//เรียกค่า %2
     
