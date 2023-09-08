@@ -95,7 +95,7 @@
     
           var code = ``; //ส่วนโค๊ดbeetlecar.servo(${value_pin}, ${value_angle})\n
           if (value_pin == '16') {
-            code = `beetlecar.servo_LiftUp(value_angle)\n`
+            code = `beetlecar.servo_LiftUp(${value_angle})\n`
           if(value_angle >= 90){
             code = `beetlecar.servo_LiftUp(90)\n`
             }
@@ -104,7 +104,7 @@
           }
         }
           else if(value_pin == '17'){
-            code = `beetlecar.servo_Clamp(value_angle)\n`
+            code = `beetlecar.servo_Clamp(${value_angle})\n`
           if(value_angle >= 90){
             code = `beetlecar.servo_Clamp(90)\n`
           }
