@@ -104,7 +104,7 @@ Blockly.defineBlocksWithJsonArray([
 
 //servo Start ////////////////////////////////
 {
-  "type": "servo_new", 
+  "type": "servo", 
   "message0": "Servo %1 Set Angle %2", 
   "args0": [
     {
