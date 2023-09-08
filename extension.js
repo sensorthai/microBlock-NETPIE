@@ -25,6 +25,15 @@
                                                 },
                                                 {
                                                     xml: `
+                                                    <block type="new_motor3">
+                                                        <field name="motor">0</field>
+                                                        <field name="move">0</field>
+                                                        <field name="speed">200</field>
+                                                    </block>
+                                                `
+                                                },
+                                                {
+                                                    xml: `
                                                     <block type="new_motor2">
                                                         <field name="move">0</field>
                                                         <field name="speed">180</field>
@@ -202,7 +211,7 @@
                          //LED Start //////////////////////////////////
                         {
                             xml: `
-                            <block type="led_onoff">
+                            <block type="led_left">
                                 <value name="pin_trig">
                                     <shadow type="math_number">
                                         <field name="NUM">Left ON</field>
@@ -211,7 +220,17 @@
                             </block>
                         `
                         },
-                        
+                        {
+                            xml: `
+                            <block type="led_right">
+                                <value name="pin_trig">
+                                    <shadow type="math_number">
+                                        <field name="NUM">Right ON</field>
+                                    </shadow>
+                                </value>
+                            </block>
+                        `
+                        },
                        
                         
 
