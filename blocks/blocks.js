@@ -98,7 +98,6 @@ Blockly.defineBlocksWithJsonArray([
   "colour": 230,
   "tooltip": "",
   "helpUrl": ""
-{
   "type": "servo", 
 },
 
