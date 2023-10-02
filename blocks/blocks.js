@@ -98,12 +98,13 @@ Blockly.defineBlocksWithJsonArray([
   "colour": 230,
   "tooltip": "",
   "helpUrl": ""
-  "type": "servo", 
 },
 
 //Motor End //////////////////////////////////
 
 //servo Start ////////////////////////////////
+ {
+  "type": "servo", 
   "message0": "Servo %1 Set Angle %2", 
   "args0": [
     {
