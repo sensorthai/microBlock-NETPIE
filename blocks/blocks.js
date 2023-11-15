@@ -1084,7 +1084,7 @@ OLED End *////////////////////////////////////
     "colour": 230,
     "tooltip": "",
     "helpUrl": ""
-  }
+  },
 //just test
     { 
     "type": "ir_test",
