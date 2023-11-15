@@ -369,6 +369,7 @@
                          {
                             xml: '<label text="IR Signal"></label>',
                         },
-             "ir_test",
-                    ]
-                         });
+                     "ir_test",
+                        
+                        ]
+                        });
