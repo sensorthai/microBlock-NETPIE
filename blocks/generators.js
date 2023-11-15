@@ -709,11 +709,11 @@ Blockly.Python['new_motor3'] = function(block) {
   return code;
 };
 //ir test
-/*Blockly.Python['ir_test'] = function(block) {
+Blockly.Python['ir_test'] = function(block) {
     
     Blockly.Python.definitions_['from_beetlecar_ir_readircode_ird'] = 'from beetlecar_ir import read_ircode , ird';
 
     var code = '#while True:\ncommand = read_ircode(ird)\nprint(command)'
     return code;
-  };*/
+  };
   
