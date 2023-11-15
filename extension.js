@@ -366,5 +366,9 @@
                                 </block>
                             `
                         },*/
+                         {
+                            xml: '<label text="IR Signal"></label>',
+                        },
+             "ir_test",
                     ]
                          });
